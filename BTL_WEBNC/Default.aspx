@@ -1,42 +1,129 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="BTL_WEBNC._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+	<div id="main-content" class="container">
+        <div class="category-title">
+            <hr class="title-strike" />
+            <h4 class="title-text">SẢN PHẨM MỚI</h4>
+        </div>
+        <div id="new-product">
+            <div class="row">
+                <asp:ListView ID="ListView1" runat="server">
+                    <ItemTemplate>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="card" onclick="location.href='ProductDetail.aspx?id=<%#Eval("id") %>';">
+                                <img class="card-img-top" style="padding: 2px;" src="<%#Eval("productImg") %>" alt="Card image cap">
+                                <div class="card-body">
+                                    <div>
+                                        <p class="card-title"><%#Eval("productName") %></p>
+                                    </div>
 
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+                                    <p class="card-text">
+                                        <span class="price">
+                                            <%#Eval("discountPrice") %>đ
+                                        </span>
+                                        <%# (Eval("discountPrice").Equals(Eval("productPrice"))) ? "" : "<del>"+ Eval("productPrice") +"đ</del>" %>
+                                    </p>
+                                    <div class="card-link" style="text-align: right;">
+                                        <a href="ProductDetail.aspx?id=<%#Eval("id") %>" class="details card-link">Chi tiết</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:ListView>
+            </div>
+        </div>
+        <div class="category-title">
+            <hr class="title-strike" />
+            <h4 class="title-text">SẢN PHẨM GIẢM GIÁ</h4>
+        </div>
+        <div id="discount-product">
+            <div class="row">
+                <asp:ListView ID="ListView2" runat="server">
+                    <ItemTemplate>
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="card" onclick="location.href='ProductDetail.aspx?id=<%#Eval("id") %>';">
+                                <img class="card-img-top" style="padding: 2px;" src="<%#Eval("productImg") %>" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title"><%#Eval("productName") %></h5>
+
+                                    <p class="card-text">
+                                        <span class="price">
+                                            <%#Eval("discountPrice") %>đ
+                                        </span>
+                                        <%# (Eval("discountPrice").Equals(Eval("productPrice"))) ? "" : "<del>"+ Eval("productPrice") +"đ</del>" %>
+                                    </p>
+                                    <div class="card-link" style="text-align: right;">
+                                        <a href="ProductDetail.aspx?id=<%#Eval("id") %>" class="details">Chi tiết</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:ListView>
+            </div>
+        </div>
+        <div class="category-title">
+            <hr class="title-strike" />
+            <h4 class="title-text">SẢN PHẨM BÁN CHẠY</h4>
+        </div>
+        <div id="best-selling">
+            <div class="row">
+                <asp:ListView ID="ListView3" runat="server">
+                    <ItemTemplate>
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="card" onclick="location.href='ProductDetail.aspx?id=<%#Eval("id") %>';">
+                                <img class="card-img-top" style="padding: 2px;" src="<%#Eval("productImg") %>" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title"><%#Eval("productName") %></h5>
+                                    <p class="card-text">
+                                        <span class="price">
+                                            <%#Eval("discountPrice") %>đ
+                                        </span>
+                                        <%# (Eval("discountPrice").Equals(Eval("productPrice"))) ? "" : "<del>"+ Eval("productPrice") +"đ</del>" %>
+                                    </p>
+                                    <div class="card-link" style="text-align: right;">
+
+                                        <a href="ProductDetail.aspx?id=<%#Eval("id") %>" class="details">Chi tiết</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:ListView>
+            </div>
+        </div>
+        <div class="category-title">
+            <hr class="title-strike" />
+            <h4 class="title-text">CÓ THỂ BẠN QUAN TÂM</h4>
+        </div>
+        <div id="intersted-product">
+            <div class="row">
+                <asp:ListView ID="ListView4" runat="server">
+                    <ItemTemplate>
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="card" onclick="location.href='ProductDetail.aspx?id=<%#Eval("id") %>';">
+                                <img class="card-img-top" style="padding: 2px;" src="<%#Eval("productImg") %>" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title"><%#Eval("productName") %></h5>
+
+                                    <p class="card-text">
+                                        <span class="price">
+                                            <%#Eval("discountPrice") %>đ
+                                        </span>
+                                        <%# (Eval("discountPrice").Equals(Eval("productPrice"))) ? "" : "<del>"+ Eval("productPrice") +"đ</del>" %>
+                                    </p>
+                                    <div class="card-link" style="text-align: right;">
+                                        <a href="ProductDetail.aspx?id=<%#Eval("id") %>" class="details">Chi tiết</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:ListView>
+            </div>
+        </div>
     </div>
-
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
-    </div>
-
 </asp:Content>
