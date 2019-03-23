@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Backend.master.cs" Inherits="BTL_WEBNC.Backend.Backend" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Quản lý địa óc Hải Đăng</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="icon" type="image/png" href="~/Images/icon_backend.png">
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/backend/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/backend/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="~/Content/backend/AdminLTE.min.css">
+    <link rel="stylesheet" href="~/Content/backend/skin-green.min.css">
+    <link rel="stylesheet" href="~/Content/backend/square/_all.css">
+    <link rel="stylesheet" href="~/Content/backend/pnotify.custom.min.css">
+    
+    <%--<script src="../Scripts/backend/jquery.min.js"></script>--%>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="../Scripts/backend/app.min.js"></script>
+    <script src="../Scripts/backend/pnotify.custom.min.js"></script>
+    <script src="../Scripts/backend/backend.js"></script>
+</head>
+<body class="hold-transition skin-green sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header">
+           <%-- <a href="#">
+                <span class="logo-mini">CNM</span>
+                <span class="logo-lg"><b>NCC CINEMA</b></span>
+            </a>--%>
+            <nav class="navbar navbar-static-top" role="navigation">
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                 <!-- The user image in the navbar-->
+                                 <img src="../Images/user2-160x160.png" class="user-image" alt="User Image">
+                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                                 <span class="hidden-xs"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="user-header">
+                                    <img src="../Images/user2-160x160.png" class="img-circle" alt="User Image">
+                                    <p>
+                                         
+                                        <small>Mobile: <br />Email: </small>
+                                    </p>
+                                </li>
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="ThongTinCaNhan.aspx" class="btn btn-default btn-flat">Thông tin</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="DoiMatKhau.aspx" class="btn btn-default btn-flat">Đổi mật khẩu</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Login.aspx"><i class="fa fa-sign-out"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="../Images/user2-160x160.png" class="img-circle" alt="User Image">
+                    </div>
+                   
+                </div>
+
+                <ul class="sidebar-menu">
+                    <li class="header text-center">------  CHỨC NĂNG HỆ THỐNG  ------</li>
+                     <asp:Repeater ID="Repeater1" runat="server">
+                        <ItemTemplate>
+                            <li><a href=""><i class=""></i> <span></span></a></li>
+                        </ItemTemplate>
+                     </asp:Repeater>
+                </ul>
+            </section>
+        </aside>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+
+
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer class="main-footer">
+             <div class="pull-right hidden-xs">Điện thoại hỗ trợ kỹ thuật: <b>01234546</b></div>
+            <strong>COPYRIGHT &copy; 2019 <a href="../Frontend/Home.aspx">Quản lý địa óc Hải Đăng.</a></strong>
+        </footer>
+    </div>
+</body>
+</html>
