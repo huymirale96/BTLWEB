@@ -12,6 +12,8 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
+	<link href="CSS/Home.css" rel="stylesheet" />
+
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
@@ -30,8 +32,10 @@
                     </button>
                     <a class="navbar-brand" runat="server" href="~/">Trang chủ</a>
                 </div>
-                <div class="navbar-collapse collapse">
+                <div class="navbar-collapse collapse" style="">
                     <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/GioiThieu">GIỚI THIỆU</a></li>
+						            <li><a runat="server" href="~/About">DỰ ÁN</a></li>
                         <li><a runat="server" href="~/Backend/Login.aspx">Login</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
