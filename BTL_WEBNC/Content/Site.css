@@ -1,7 +1,7 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* Wrapping element */
@@ -21,11 +21,135 @@ textarea {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-    .jumbotron {
-        margin-top: 20px;
-    }
-
     .body-content {
         padding: 0;
     }
+}
+.jumbotron {
+	padding: 30px 15px;
+	margin-bottom: 30px;
+	color: inherit;
+	background-color: #f5f5f5;
+	background-position: 53% 20%;
+	background-repeat: no-repeat;
+}
+.jumbotron.head {
+	padding: 8px;
+	margin: 0;
+}
+.cus_jumbotron_public {
+	border-bottom: 1px solid #dedede;
+	background-image: none;
+	padding: 2px;
+}
+.mbnd-navbar {
+	margin: 0;
+	padding: 5px 0 10px 0;
+}
+.navbar.navbar-default {
+	background-color: #fff;
+	border: none;
+}
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 7.5px;
+	padding-right: 7.5px;
+}
+.row {
+	margin-left: -7.5px;
+	margin-right: -7.5px;
+}
+.jumbotron.head .slogan {
+	display: block;
+	padding: 8px 15px;
+}
+.jumbotron.head .slogan {
+	padding-left: 1px;
+}
+.mbnd-panel-feature {
+	background: none;
+	border: 0;
+	box-shadow: none;
+	padding: 15px 0;
+	margin-bottom: 0;
+}
+.mbnd-panel-feature .panel-heading {
+	padding: 0 0 15px 0;
+	background: none;
+	border: 0;
+}
+.btn-showmore {
+	color: #ed1c24;
+	text-transform: capitalize;
+	font-size: 12px;
+	text-decoration: underline;
+}
+.mbnd-panel-feature .panel-body {
+	padding: 0;
+}
+.listing-tag {
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 155px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.imgListing .img-responsive {
+	width: 100%;
+	height: 100%;
+}
+.title-h2 {
+	font-size: 18px;
+}
+.title-h1, .title-h2, .title-h3 {
+	color: #464646;
+	font-weight: 600;
+	margin: 0 0 1rem 0;
+}
+.text-uppercase {
+	text-transform: uppercase;
+}
+.mbnd-card .card-title {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-top: 0;
+	margin-bottom: 5px;
+	line-height: 21px;
+	height: 42px;
+}
+a {
+	color: #414142;
+}
+a:hover {
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: #999;
+	text-decoration: underline;
+}
+.mbnd-card .card-title.one-line {
+	padding-top: 2px;
+	height: 22px;
+	overflow: hidden;
+}
+.mbnd-card .card-price {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 0;
+	color: #ed1c24;
+}
+.col-xs-12{
+	padding-left:5px;
+	padding-right: 5px;
+}
+.mbnd-objectLastest {
+	border-bottom: 1px solid #ed1c24;
+	margin-bottom: 0;
+}
+.mbnd-card.mbnd-objectLastest .card-body {
+	padding: 10px 0;
 }
