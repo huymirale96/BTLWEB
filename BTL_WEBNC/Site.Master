@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BTL_WEB2.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BTL_WEBNC.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -20,29 +20,62 @@
 </head>
 <body>
     <form runat="server">
-       
-
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Trang chủ</a>
-                </div>
-                <div class="navbar-collapse collapse" style="">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/GioiThieu">GIỚI THIỆU</a></li>
-						            <li><a runat="server" href="~/About">DỰ ÁN</a></li>
-                        <li><a runat="server" href="~/Backend/Login.aspx">Login</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
+       <div class="jumbotron head cus_jumbotron_public">
+            <div class="container head">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 <col-lg-12 text-right custext-right_public">
+                        <img src="/img/icons/phone-ic.png">
+                        <span class="cus-span-telpublic">Hotline: <b><a href="tel:18001207">18001207</a></b></span>
+                        <span class="cus-span-ctpublic"><a href="ymsgr:sendIM?muabannhadat.comvn" title="Chat qua Yahoo" class="yahoo" rel="nofollow">
+                            <img src="/img/icons/yahoo-ic.png" alt="muabannhadat.vn"></a></span>
+                        <span class="cus-span-ctpublic"><a href="skype:muabannhadat.com.vn?userinfo" title="Chat qua Skype" class="skype" rel="nofollow">
+                            <img src="/img/icons/skype-ic.png" alt="muabannhadat.vn"></a></span>
+                    </div>
                 </div>
             </div>
         </div>
+		<div class="navbar navbar-default mbnd-navbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 visible-lg hidden-xs hidden-sm logo">
+						<a href="/">
+							<img src="/img/svg/logo.svg" height="50" alt="Mua bán nhà đất">
+						</a>
+					</div>
+					
+					<div class="col-md-10">
+						<div class="collapse navbar-collapse big" id="mainNav">
+							<ul class="nav navbar-nav">
+								<li><a class="navbar-brand" runat="server" href="~/">Trang chủ</a></li>
+								<li>
+									<a href="/nha-dat-3490" class="dropdown-toggle">Nhà Đất Cần Bán <img class="img-arrow" height="8" src="/Content/img/Ico-arrow-down.svg" alt=""></a>
+								</li>		
+		
+								<li>
+									<a href="/nha-dat-3490" class="dropdown-toggle">Nhà Đất Cho thuê <img class="img-arrow" height="8" src="/Content/img/Ico-arrow-down.svg" alt=""></a>
+								</li>
+								<li>
+									<a href="https://duan.muabannhadat.vn/">
+										Dự án
+									</a>
+								</li>
+								<li>
+									<a href="/tin-tuc"> Tin tức</a>
+								</li>
+							</ul>
+							<ul id="loginStatus" class="nav navbar-right navbar-nav">
+								<li>
+									<a runat="server" href="~/Backend/Login.aspx">Đăng nhập</a>
+								</li>
+								<li class="nav-register">
+									<a href="#">Đăng ký</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
