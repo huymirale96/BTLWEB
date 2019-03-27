@@ -118,7 +118,7 @@
                                         <td class="text-center"><%#Eval("sGioitinh") %></td>
                                         <td class="text-center">
                                             <asp:LinkButton ID="btnSuaThongTin" runat="server" CssClass="btn btn-success btn-sm"  CommandArgument='<%#Eval("PK_iMaNV") %>' OnClick="btnSuaThongTin_Click"><i class="fa fa-pencil"></i></asp:LinkButton>
-                                            <asp:LinkButton id="btnXoaNhanVien" runat="server" CssClass="btn btn-danger btn-sm"  CommandArgument='<%#Eval("PK_iMaNV") %>' OnClientClick="return confirm('Bạn có muốn khóa tài khoản, nhân viên hay này không ?');" ><i class="fa fa-lock"></i></asp:LinkButton>
+                                            <asp:LinkButton id="btnXoaNhanVien" runat="server" CssClass="btn btn-danger btn-sm"  CommandArgument='<%#Eval("PK_iMaNV") %>' OnClientClick="return confirm('Bạn có muốn khóa tài khoản, nhân viên này không ?');" ><i class="fa fa-lock"></i></asp:LinkButton>
                                            
                                             
                                         </td>
@@ -134,10 +134,10 @@
 </div>
       </form>
     </section><!-- /.content -->
-  <%--  <script type="text/javascript">
+    <script type="text/javascript">
         window.onload = function (e) { 
            <%=status %>
         }
-    </script>--%>
+    </script>
   </div><!-- /.content-wrapper -->
 </asp:Content>
