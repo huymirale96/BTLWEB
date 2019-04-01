@@ -32,7 +32,7 @@ namespace BTL_WEBNC.Backend
             if (dt.Rows.Count > 0)
             {
                 Application["Solan"] = Convert.ToInt32(Application["Solan"].ToString()) + 1;
-                Session["ten_taikhoan"] = dt.Rows[0][0].ToString();
+                Session["ten_taikhoan"] = dt.Rows[0][1].ToString();
                 Session["ma_quyen"] = dt.Rows[0][4].ToString();
                 Session["ma_nhanvien"] = dt.Rows[0][2].ToString();
                 Session["ma_khachang"] = dt.Rows[0][3].ToString();
@@ -41,7 +41,7 @@ namespace BTL_WEBNC.Backend
             }
             else
             {
-                Response.Write(user.Text);
+                Response.Redirect("Login.aspx");
             }
         }
     }
