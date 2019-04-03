@@ -17,9 +17,9 @@ namespace BTL_WEBNC.Backend
         SqlConnection cnn = mylibrary.connectDatabase();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //getdata();
             string quyen = Session["ma_quyen"].ToString();
-            if (quyen =="1")
+            if (quyen == "1")
             {
                 btnThemMoi.Visible = true;
                 btnUpdateInfo.Visible = false;
@@ -34,7 +34,7 @@ namespace BTL_WEBNC.Backend
                 Response.Redirect("KhongDuThamQuyen.aspx");
 
             }
-            
+
 
         }
 
@@ -106,6 +106,16 @@ namespace BTL_WEBNC.Backend
             //cnn.Close();
 
             
+        }
+        protected void getdata()
+        {
+            SqlDataAdapter da = new SqlDataAdapter("IUD_TaiKhoan", cnn);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            da.SelectCommand.Parameters.AddWithValue("@action", "select");
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            Repeater1.DataSource = dt;
+            Repeater1.DataBind();
         }
         protected void btnSuaThongTin_Click(object sender, EventArgs e)
         {
@@ -199,22 +209,5 @@ namespace BTL_WEBNC.Backend
             //getdata();
             Response.Redirect("DanhSachTaiKhoan.aspx");
         }
-        protected void getdata()
-        {
-            
-            
-            SqlDataAdapter da = new SqlDataAdapter("IUD_TaiKhoan", cnn);
-            da.SelectCommand.CommandType = CommandType.StoredProcedure;
-            da.SelectCommand.Parameters.AddWithValue("@action", "select_TaikhoanNV");
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            Repeater1.DataSource = dt;
-            Repeater1.DataBind();
-            //this.btnXoaNhanVien.Visible = false;
-           
-
-        }
-
-        
     }
 }

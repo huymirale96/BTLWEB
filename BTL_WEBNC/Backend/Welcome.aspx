@@ -31,7 +31,7 @@
                 <div class="col-lg-3 col-xs-6"><!-- small box -->
                     <div class="small-box bg-green">
                         <div class="inner">
-                            <h4>Danh sách thành viên</h4>
+                            <h4>Danh sách khách hàng</h4>
                             <p>
                                 <br />
                                 <br />
@@ -40,7 +40,7 @@
                         <div class="icon">
                             <i class="icon ion-md-contacts"></i>
                         </div>
-                        <a href="DanhSachGhe.aspx" class="small-box-footer">Chi tiết... <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="DanhNguoiDung.aspx" class="small-box-footer">Chi tiết... <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div><!-- ./col -->
                 <div class="col-lg-3 col-xs-6"><!-- small box -->
@@ -71,7 +71,7 @@
                         <div class="icon">
                             <i class="ion ion-key"></i>
                         </div>
-                        <a href="" class="small-box-footer">Chi tiết... <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="#" class="small-box-footer">Chi tiết... <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div><!-- ./col -->
                 <div class="col-lg-3 col-xs-6"><!-- small box -->
@@ -104,22 +104,7 @@
                         </div>
                         <a href="DoiMatKhau.aspx" class="small-box-footer">Chi tiết... <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
-                </div><!-- ./col -->
-                <div class="col-lg-3 col-xs-6"><!-- small box -->
-                    <div class="small-box bg-blue">
-                        <div class="inner">
-                            <h4>Đăng xuất</h4>
-                            <p>
-                                <br />
-                                <br />
-                            </p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-log-out"></i>
-                        </div>
-                        <a href="DangXuat.aspx" class="small-box-footer">Chi tiết... <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
-                </div><!-- ./col -->
+                </div><!-- ./col -->                
             </div>
         </section>
     </div>

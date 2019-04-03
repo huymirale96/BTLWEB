@@ -11,7 +11,11 @@ namespace BTL_WEBNC.Backend
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string quyen = Session["ma_quyen"].ToString();
+            if (String.IsNullOrEmpty(quyen))
+            {
+                Response.Redirect("Login.aspx");
+            }
         }
     }
 }
