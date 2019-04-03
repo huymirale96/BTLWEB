@@ -11,80 +11,83 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-
+	<link rel="stylesheet" href="Content/bootstrap-theme.css" />
+	<link rel="stylesheet" href="Content/bootstrap.min.css" />
 	<link href="CSS/Home.css" rel="stylesheet" />
-
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
+	
 </head>
 <body>
-    <form runat="server">
-       <div class="jumbotron head cus_jumbotron_public">
-            <div class="container head">
-                <div class="row">
-                    <div class="col-xs-12 col-md-12 <col-lg-12 text-right custext-right_public">
-                        <img src="/img/icons/phone-ic.png">
-                        <span class="cus-span-telpublic">Hotline: <b><a href="tel:18001207">18001207</a></b></span>
-                        <span class="cus-span-ctpublic"><a href="ymsgr:sendIM?muabannhadat.comvn" title="Chat qua Yahoo" class="yahoo" rel="nofollow">
-                            <img src="/img/icons/yahoo-ic.png" alt="muabannhadat.vn"></a></span>
-                        <span class="cus-span-ctpublic"><a href="skype:muabannhadat.com.vn?userinfo" title="Chat qua Skype" class="skype" rel="nofollow">
-                            <img src="/img/icons/skype-ic.png" alt="muabannhadat.vn"></a></span>
-                    </div>
+    <div class="jumbotron head cus_jumbotron_public">
+        <div class="container head">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 <col-lg-12 text-right custext-right_public">
+                    <img src="Images/phone-ic.png">
+                    <span class="cus-span-telpublic">Hotline: <b><a href="tel:18001207">18001207</a></b></span>
+                    <span class="cus-span-ctpublic"><a href="ymsgr:sendIM?muabannhadat.comvn" title="Chat qua Yahoo" class="yahoo" rel="nofollow">
+                        <img src="Images/yahoo-ic.png" alt="muabannhadat.vn"></a></span>
+                    <span class="cus-span-ctpublic"><a href="skype:muabannhadat.com.vn?userinfo" title="Chat qua Skype" class="skype" rel="nofollow">
+                        <img src="Images/skype-ic.png" alt="muabannhadat.vn"></a></span>
                 </div>
             </div>
         </div>
-		<div class="navbar navbar-default mbnd-navbar">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-2 visible-lg hidden-xs hidden-sm logo">
-						<a href="/">
-							<img src="/img/svg/logo.svg" height="50" alt="Mua bán nhà đất">
-						</a>
-					</div>
-					
-					<div class="col-md-10">
-						<div class="collapse navbar-collapse big" id="mainNav">
-							<ul class="nav navbar-nav">
-								<li><a class="navbar-brand" runat="server" href="~/">Trang chủ</a></li>
-								<li>
-									<a href="/nha-dat-3490" class="dropdown-toggle">Nhà Đất Cần Bán <img class="img-arrow" height="8" src="/Content/img/Ico-arrow-down.svg" alt=""></a>
-								</li>		
+    </div>
+	<div class="navbar navbar-default mbnd-navbar">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 visible-lg hidden-xs hidden-sm logo">
+					<a href="/">
+						<img src="Images/banner2.png" height="50" alt="Mua bán nhà đất">
+					</a>
+				</div>
+				<div class="navbar-header hidden-md hidden-lg">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="true">
+					</button>
+					<a class="navbar-brand" href="/">
+						<img src="/img/svg/logo.svg" height="50" alt="Mua bán nhà đất">
+					</a>
+				</div>
+				<div class="col-md-10">
+					<div class="navbar-collapse big collapse in" id="mainNav" aria-expanded="true">
+						<ul class="nav navbar-nav">
+							<li><a class="navbar-brand" runat="server" href="~/">Trang chủ</a></li>
+							<li>
+								<a runat="server" href="nhadatban">Nhà Đất Cần Bán</a>
+							</li>		
 		
-								<li>
-									<a href="/nha-dat-3490" class="dropdown-toggle">Nhà Đất Cho thuê <img class="img-arrow" height="8" src="/Content/img/Ico-arrow-down.svg" alt=""></a>
-								</li>
-								<li>
-									<a href="https://duan.muabannhadat.vn/">
-										Dự án
-									</a>
-								</li>
-								<li>
-									<a href="/tin-tuc"> Tin tức</a>
-								</li>
-							</ul>
-							<ul id="loginStatus" class="nav navbar-right navbar-nav">
-								<li>
-									<a runat="server" href="~/Backend/Login.aspx">Đăng nhập</a>
-								</li>
-								<li class="nav-register">
-									<a href="#">Đăng ký</a>
-								</li>
-							</ul>
-						</div>
+							<li>
+								<a runat="server" href="nhadatchothue" >Nhà Đất Cho thuê</a>
+							</li>
+							<li>
+								<a runat="server" href="Duan">Dự án</a>
+							</li>
+							<li>
+								<a runat="server" href="Duan">Tin Tức</a>
+							</li>
+						</ul>
+						<ul id="loginStatus" class="nav navbar-right navbar-nav">
+							<li>
+								<a runat="server" href="~/Backend/Login.aspx">Đăng nhập</a>
+							</li>
+							<li class="nav-register">
+								<a href="#">Đăng ký</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Bất động sản Hải Đăng</p>
-            </footer>
-        </div>
-
-    </form>
+	</div>
+    <div class="container body-content">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <hr />
+        <footer>
+            <p>&copy; <%: DateTime.Now.Year %> - Bất động sản Hải Đăng</p>
+        </footer>
+    </div>
 </body>
 </html>

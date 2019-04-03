@@ -1,0 +1,189 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="Site.master" CodeBehind="nhadatban.aspx.cs" Inherits="BTL_WEBNC.nhadatban" %>
+
+<asp:Content ID="nhadatban" ContentPlaceHolderID="MainContent" runat="server">
+	<div class="container main bs-docs-container">
+    <div class="row" role="main">
+      <div class="container">
+  <h1 class="headline"> Nhà đất bán </h1>
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-lg-9 col-md-push-4 col-lg-push-3">
+			<div class="list-group result-list">
+				<div class="list-group-item list-head">
+					<div class="row">
+						<div class="col-xs-5"> 
+							<span id="MainContent_ctlList_ctlResults_lblCount">Lọc theo</span> 
+						</div>
+						<div id="MainContent_ctlList_ctlResults_divSorting" class="col-xs-7">
+							<select id="MainContent_ctlList_ctlResults_ddlSorting" class="pull-right col-xs-12 btn btn-light">
+								<option value="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban?order=0">Mặc định</option>
+								<option value="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban?order=1">Mới nhất</option>
+								<option value="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban?order=3">Cũ nhất</option>
+								<option value="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban?order=2">Giá cao nhất</option>
+								<option value="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban?order=4">Giá thấp nhất</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-feature">
+					<div class="panel-heading">
+						<h2 class="home-heading">Bất động sản nổi bật</h2>
+					</div>
+					<div class="panel-body">
+					<style>
+     					.hiderphoto{
+							visibility:hidden;
+						}
+     				</style>
+					<div class="col-xs-12 col-sm-6 col-lg-3">
+						<a href="#" class="object">
+							<div class="image"> 
+								<img class="img-responsive imageFeaturedBox" src="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-small="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-medium="https://thanhphongland.com/public/uploads/shop/2015/11/18/93ad9800c4d27566205d0e3e04603532.jpg" alt="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi" title="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi"> 
+							</div>
+							<p class="title" style="margin-bottom: 7px;">Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi</p>
+							<p class="location" style="margin-bottom: 5px;">Thị Xã Đồ Sơn</p> 
+							<p class="location" style="margin-bottom: 5px;">TP.Hà Nội</p> 
+							<p class="location" style="margin-bottom: 5px;">Giá: 772 Triệu VNĐ</p> 
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-lg-3">
+						<a href="#" class="object">
+							<div class="image"> 
+								<img class="img-responsive imageFeaturedBox" src="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-small="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-medium="https://thanhphongland.com/public/uploads/shop/2015/11/18/93ad9800c4d27566205d0e3e04603532.jpg" alt="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi" title="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi"> 
+							</div>
+							<p class="title" style="margin-bottom: 7px;">Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi</p>
+							<p class="location" style="margin-bottom: 5px;">Thị Xã Đồ Sơn</p> 
+							<p class="location" style="margin-bottom: 5px;">TP.Hà Nội</p> 
+							<p class="location" style="margin-bottom: 5px;">Giá: 772 Triệu VNĐ</p> 
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-lg-3">
+						<a href="#" class="object">
+							<div class="image"> 
+								<img class="img-responsive imageFeaturedBox" src="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-small="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-medium="https://thanhphongland.com/public/uploads/shop/2015/11/18/93ad9800c4d27566205d0e3e04603532.jpg" alt="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi" title="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi"> 
+							</div>
+							<p class="title" style="margin-bottom: 7px;">Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi</p>
+							<p class="location" style="margin-bottom: 5px;">Thị Xã Đồ Sơn</p> 
+							<p class="location" style="margin-bottom: 5px;">TP.Hà Nội</p> 
+							<p class="location" style="margin-bottom: 5px;">Giá: 772 Triệu VNĐ</p> 
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-lg-3">
+						<a href="#" class="object">
+							<div class="image"> 
+								<img class="img-responsive imageFeaturedBox" src="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-small="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-medium="https://thanhphongland.com/public/uploads/shop/2015/11/18/93ad9800c4d27566205d0e3e04603532.jpg" alt="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi" title="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi"> 
+							</div>
+							<p class="title" style="margin-bottom: 7px;">Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi</p>
+							<p class="location" style="margin-bottom: 5px;">Thị Xã Đồ Sơn</p> 
+							<p class="location" style="margin-bottom: 5px;">TP.Hà Nội</p> 
+							<p class="location" style="margin-bottom: 5px;">Giá: 772 Triệu VNĐ</p> 
+						</a>
+					</div>
+				</div>
+				</div>
+				<div class="list-group-item Product-TopListing">
+					<div class="row">
+						<div class="resultItem">
+							<div class="col-md-2 col-sm-4 col-xs-12 picture-area">
+								<div>
+									<div class="mbndcustomPicture"> 
+										<img class="img-thumbnail" src="https://thanhphongland.com/public/uploads/shop/2019/3/23/15/thiet-ke-toa-h5-vincity-sportia.jpg.jpg" alt="Bán CĂN 2 NGỦ+2 VINCITY SPORTIA GIÁ RẺ NHẤT LH:0965884838" title="Bán CĂN 2 NGỦ+2 VINCITY SPORTIA GIÁ RẺ NHẤT LH:0965884838">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-10 col-sm-8 col-xs-12 ">
+								<div class="row">
+									<div class="col-xs-12 col-md-9 title">
+										<a class="title-filter-link" href="#">Bán CĂN 2 NGỦ+2 VINCITY SPORTIA GIÁ RẺ NHẤT LH:0965884838</a>
+									</div>
+									<div class="col-md-3 col-xs-12 text-right">2375 Triệu VNĐ</div>
+									<address id="MainContent_ctlList_ctlResults_repList_ctl00_0_divListingInformationAddress_0" class="col-md-6 col-xs-12">
+										<div class="col-xs-12">TP.Hà Nội</div>
+										<div class="col-xs-12">Huyện Từ Liêm</div>
+										<div class="col-xs-12">Ngày đăng: 23/03/2019</div>
+									</address>
+									<div id="MainContent_ctlList_ctlResults_repList_ctl00_0_divRightInformation_0" class="col-md-6 col-xs-12">
+										<div class="col-xs-12">Số phòng ngủ: 2</div>
+										<div class="col-xs-12">Diện tích : 70 m²</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="list-group-item list-footer text-center">
+					<div class="pagination"><ul class="pagination"><li class="active"><a>1</a></li><li><a href="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban/25">2</a></li><li><a href="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban/50">3</a></li><li class="next-page"><a href="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban/25">&gt;</a></li><li><a href="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban/250">Last ›</a></li></ul></div>        </div>
+				</div>
+		</div>
+		<form action="#" method="get" novalidate="novalidate">
+			<div class="col-xs-12 col-md-4 col-lg-3 col-md-pull-8 col-lg-pull-9" id="jump2filter">
+				<div class="panel panel-filter">
+					<div class="panel-heading"> Giá (VND) </div>
+					<div class="panel-body range-entry">
+						<div class="form-group col-md-6">
+							<label> từ triệu</label>
+							<input name="price_min" type="text" value="" maxlength="16" id="" class="form-control InputJs textbox-phone input-min" placeholder="0">
+						</div>
+						<div class="form-group col-md-6">
+							<label> đến triệu</label>
+							<input name="price_max" type="text" value="" maxlength="16" id="MainContent_ctlList_ctlFilters_AttGroups_ctl00_1_txtMax_1" class="form-control InputJs textbox-phone input-max" placeholder="1.000.000">
+						</div>
+							<span id="MainContent_ctlList_ctlFilters_AttGroups_ctl00_1_hidMin_1" class="hidden hide-min">0</span> <span id="MainContent_ctlList_ctlFilters_AttGroups_ctl00_1_hidMax_1" class="hidden hide-max">1.000.000</span>
+						<div class="col-xs-12"> &nbsp;
+							<button value="submit" id="MainContent_ctlList_ctlFilters_AttGroups_ctl00_1_Apply_1" class="btn btn-primary btn-xs pull-right"><span>Chọn</span></button>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-filter">
+					<div class="panel-heading"> Diện tích </div>
+					<div class="panel-body range-entry">
+						<div class="form-group col-md-6">
+							<label> m² </label>
+							<input name="area_min" type="text" value="" maxlength="16" class="form-control InputJs textbox-phone input-min" placeholder="1">
+						</div>
+						<div class="form-group col-md-6">
+							<label> m² </label>
+							<input name="area_max" type="text" value="" maxlength="16" class="form-control InputJs textbox-phone input-max" placeholder="100000">
+						</div>
+						<div class="col-xs-12"> &nbsp;
+							<button value="submit" id="MainContent_ctlList_ctlFilters_AttGroups_ctl00_2_Apply_2" class="btn btn-primary btn-xs pull-right"><span>Chọn</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+  <!--Ad:Leaderboard-->
+	<div class="col-xs-12 col-md-8 col-lg-9 col-md-push-4 col-lg-push-3 hidden-xs">
+		<div class="panel panel-feature">
+			<div class="row"> 
+				<div class="panel-body leaderboard2producthome">
+					<a href="#" target="_blank" title="728x90"> 
+						<img src="https://thanhphongland.com/public/uploads/ads/2015/12/11/10/a4564330c678838bd6fc33e904f17f1c.jpg" title="728x90"> 
+					</a>
+				</div>  
+			</div>
+		</div>
+	</div>
+	<div id="MainContent_teaser" class="well col-xs-12 col-md-8 col-lg-9 col-md-push-4 col-lg-push-3">
+		<span> Bạn đang cần những mặt bằng, khu đất để đầu tư cho các dự án thương mại hoặc cửa hàng kinh doanh? Bạn cần mua lại những mặt bằng đang có sẵn để mở rộng việc kinh doanh? Tìm ngay và liên hệ với người bán nhanh chóng. </span>
+	</div>
+</div>
+
+<!--Ad:Leaderboard
+<script>
+	$(function(){
+	  $('#MainContent_ctlList_ctlResults_ddlSorting').on('change', function () {
+		  var url = $(this).val(); // get selected value
+		  if (url) { // require a URL
+			  window.location = url; // redirect
+		  }
+		  return false;
+	  });
+	  $("#MainContent_ctlList_ctlResults_ddlSorting").val("https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban?order=0");
+	  $("#MainContent_ctlList_ctlResults_ddlSorting_Filter").val("0");
+	});
+</script>    
+-->
+		</div>
+	</div>
+</asp:Content>
