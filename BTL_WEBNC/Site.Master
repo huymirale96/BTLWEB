@@ -73,7 +73,7 @@
 								<a runat="server" href="~/Backend/Login.aspx">Đăng nhập</a>
 							</li>
 							<li class="nav-register">
-								<a href="#">Đăng ký</a>
+								<a href="Backend/Dangky.aspx">Đăng ký</a>
 							</li>
 						</ul>
 					</div>
