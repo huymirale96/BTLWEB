@@ -35,8 +35,9 @@ namespace BTL_WEBNC.Backend
                 Session["ten_taikhoan"] = dt.Rows[0][1].ToString();
                 Session["ma_quyen"] = dt.Rows[0][4].ToString();
                 Session["ma_nhanvien"] = dt.Rows[0][2].ToString();
-                Session["ma_khachang"] = dt.Rows[0][3].ToString();
-                Response.Write("<script> var kt = confirm('Đăng nhập thanh cong'); " +
+                Session["matkhau"] = dt.Rows[0][3].ToString();
+                Session["ma_khachang"] = dt.Rows[0][5].ToString();
+                Response.Write("<script> var kt = confirm('Đăng nhập thanh cong "+ Session["ma_khachang"] +"'); " +
                    "if(kt==true)  window.location='http://localhost:59209/Backend/Welcome.aspx';</script>");
             }
             else
