@@ -19,7 +19,7 @@ namespace BTL_WEBNC.Backend
             }
             if(String.IsNullOrEmpty(makh))
             {
-                Response.Redirect("Login.aspx");
+               
 
             }else{
                 Response.Redirect("Thongtincanhan.aspx");
