@@ -30,9 +30,11 @@ namespace BTL_WEBNC
         {
             // Code that runs when a new session is started
             Session["ten_taikhoan"] = "";
+            Session["ma_taikhoan"] = "";
             Session["ma_quyen"] = "";
             Session["ma_nhanvien"] = "";
             Session["ma_khachang"] = "";
+            Session["matkhau"] = "";
 
             int so = int.Parse(Application.Get("sn").ToString());
             so++;
@@ -57,6 +59,7 @@ namespace BTL_WEBNC
             // is set to InProc in the Web.config file. If session mode is set to StateServer 
             // or SQLServer, the event is not raised.
             Session["ten_taikhoan"] = "";
+            Session["ma_taikhoan"] = "";
             Session["ma_quyen"] = "";
             Session["ma_nhanvien"] = "";
             Session["ma_khachang"] = "";

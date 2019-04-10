@@ -33,11 +33,12 @@ namespace BTL_WEBNC.Backend
             {
                 Application["Solan"] = Convert.ToInt32(Application["Solan"].ToString()) + 1;
                 Session["ten_taikhoan"] = dt.Rows[0][1].ToString();
+                Session["ma_taikhoan"] = dt.Rows[0][0].ToString(); ;
                 Session["ma_quyen"] = dt.Rows[0][4].ToString();
                 Session["ma_nhanvien"] = dt.Rows[0][2].ToString();
                 Session["matkhau"] = dt.Rows[0][3].ToString();
                 Session["ma_khachang"] = dt.Rows[0][5].ToString();
-                Response.Write("<script> var kt = confirm('Đăng nhập thanh cong "+ Session["ma_khachang"] +"'); " +
+                Response.Write("<script> var kt = confirm('Đăng nhập thành công '); " +
                    "if(kt==true)  window.location='http://localhost:59209/Backend/Welcome.aspx';</script>");
             }
             else
