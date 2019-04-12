@@ -8,7 +8,7 @@
       Bạn không đủ quyền để sử dụng chức năng này
     </h1>
     <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
+      <li><a href="Welcome.aspx"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
       <li class="active">Không đủ thẩm quyền</li>
     </ol>
   </section>

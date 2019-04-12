@@ -69,12 +69,25 @@
 							</li>
 						</ul>
 						<ul id="loginStatus" class="nav navbar-right navbar-nav">
-							<li>
-								<a runat="server" href="~/Backend/Login.aspx">Đăng nhập</a>
-							</li>
-							<li class="nav-register">
-								<a href="Backend/Dangky.aspx">Đăng ký</a>
-							</li>
+							<% if (Session["ma_taikhoan"] != null)
+								{ %>
+									<li>
+										<a runat="server" href="~/Backend/Welcome.aspx">
+											<p>Hello <%= Session["ten_taikhoan"] %></p>
+										</a>
+									</li>
+								<%}
+							%>
+							<%	else
+								{%>
+									<li>
+										<a runat="server" href="~/Backend/Login">Đăng nhập</a>
+									</li>
+									<li class="nav-register">
+										<a href="Backend/Dangky">Đăng ký</a>
+									</li>
+								<%}
+							%>
 						</ul>
 					</div>
 				</div>

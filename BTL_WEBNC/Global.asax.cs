@@ -30,7 +30,7 @@ namespace BTL_WEBNC
         {
             // Code that runs when a new session is started
             Session["ten_taikhoan"] = "";
-            Session["ma_taikhoan"] = "";
+            Session["ma_taikhoan"] = null;
             Session["ma_quyen"] = "";
             Session["ma_nhanvien"] = "";
             Session["ma_khachang"] = "";

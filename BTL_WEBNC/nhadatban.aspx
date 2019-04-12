@@ -15,11 +15,11 @@
 						</div>
 						<div id="MainContent_ctlList_ctlResults_divSorting" class="col-xs-7">
 							<select id="MainContent_ctlList_ctlResults_ddlSorting" class="pull-right col-xs-12 btn btn-light">
-								<option value="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban?order=0">Mặc định</option>
-								<option value="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban?order=1">Mới nhất</option>
-								<option value="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban?order=3">Cũ nhất</option>
-								<option value="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban?order=2">Giá cao nhất</option>
-								<option value="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban?order=4">Giá thấp nhất</option>
+								<option value="#">Mặc định</option>
+								<option value="#">Mới nhất</option>
+								<option value="#">Cũ nhất</option>
+								<option value="#">Giá cao nhất</option>
+								<option value="#">Giá thấp nhất</option>
 							</select>
 						</div>
 					</div>
@@ -34,81 +34,53 @@
 							visibility:hidden;
 						}
      				</style>
-					<div class="col-xs-12 col-sm-6 col-lg-3">
-						<a href="#" class="object">
-							<div class="image"> 
-								<img class="img-responsive imageFeaturedBox" src="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-small="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-medium="https://thanhphongland.com/public/uploads/shop/2015/11/18/93ad9800c4d27566205d0e3e04603532.jpg" alt="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi" title="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi"> 
+					<asp:ListView ID="ListView1" runat="server">
+						<ItemTemplate>
+							<div class="col-xs-12 col-sm-6 col-lg-3">
+								<a href="thongtinchitiet.aspx?id=<%#Eval("PK_iMaBV") %>" class="object">
+									<div class="image"> 
+										<img class="img-responsive imageFeaturedBox" src="Images/<%#Eval("PK_iMaBV") %>.jpg" alt="<%#Eval("sTieude") %>" title="<%#Eval("sTieude") %>"> 
+									</div>
+									<p class="title" style="margin-bottom: 7px;"><%#Eval("sTieude") %></p>
+									<p class="location" style="margin-bottom: 5px;"><%#Eval("sDiaChiCC") %></p> 
+									<p class="location" style="margin-bottom: 5px;">Giá: <%#Eval("sGiaban") %> VNĐ</p> 
+								</a>
 							</div>
-							<p class="title" style="margin-bottom: 7px;">Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi</p>
-							<p class="location" style="margin-bottom: 5px;">Thị Xã Đồ Sơn</p> 
-							<p class="location" style="margin-bottom: 5px;">TP.Hà Nội</p> 
-							<p class="location" style="margin-bottom: 5px;">Giá: 772 Triệu VNĐ</p> 
-						</a>
+						</ItemTemplate>
+					</asp:ListView>
 					</div>
-					<div class="col-xs-12 col-sm-6 col-lg-3">
-						<a href="#" class="object">
-							<div class="image"> 
-								<img class="img-responsive imageFeaturedBox" src="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-small="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-medium="https://thanhphongland.com/public/uploads/shop/2015/11/18/93ad9800c4d27566205d0e3e04603532.jpg" alt="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi" title="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi"> 
-							</div>
-							<p class="title" style="margin-bottom: 7px;">Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi</p>
-							<p class="location" style="margin-bottom: 5px;">Thị Xã Đồ Sơn</p> 
-							<p class="location" style="margin-bottom: 5px;">TP.Hà Nội</p> 
-							<p class="location" style="margin-bottom: 5px;">Giá: 772 Triệu VNĐ</p> 
-						</a>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-lg-3">
-						<a href="#" class="object">
-							<div class="image"> 
-								<img class="img-responsive imageFeaturedBox" src="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-small="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-medium="https://thanhphongland.com/public/uploads/shop/2015/11/18/93ad9800c4d27566205d0e3e04603532.jpg" alt="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi" title="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi"> 
-							</div>
-							<p class="title" style="margin-bottom: 7px;">Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi</p>
-							<p class="location" style="margin-bottom: 5px;">Thị Xã Đồ Sơn</p> 
-							<p class="location" style="margin-bottom: 5px;">TP.Hà Nội</p> 
-							<p class="location" style="margin-bottom: 5px;">Giá: 772 Triệu VNĐ</p> 
-						</a>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-lg-3">
-						<a href="#" class="object">
-							<div class="image"> 
-								<img class="img-responsive imageFeaturedBox" src="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-small="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-medium="https://thanhphongland.com/public/uploads/shop/2015/11/18/93ad9800c4d27566205d0e3e04603532.jpg" alt="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi" title="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi"> 
-							</div>
-							<p class="title" style="margin-bottom: 7px;">Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi</p>
-							<p class="location" style="margin-bottom: 5px;">Thị Xã Đồ Sơn</p> 
-							<p class="location" style="margin-bottom: 5px;">TP.Hà Nội</p> 
-							<p class="location" style="margin-bottom: 5px;">Giá: 772 Triệu VNĐ</p> 
-						</a>
-					</div>
-				</div>
 				</div>
 				<div class="list-group-item Product-TopListing">
-					<div class="row">
-						<div class="resultItem">
-							<div class="col-md-2 col-sm-4 col-xs-12 picture-area">
-								<div>
-									<div class="mbndcustomPicture"> 
-										<img class="img-thumbnail" src="https://thanhphongland.com/public/uploads/shop/2019/3/23/15/thiet-ke-toa-h5-vincity-sportia.jpg.jpg" alt="Bán CĂN 2 NGỦ+2 VINCITY SPORTIA GIÁ RẺ NHẤT LH:0965884838" title="Bán CĂN 2 NGỦ+2 VINCITY SPORTIA GIÁ RẺ NHẤT LH:0965884838">
+					<asp:ListView ID="ListView2" runat="server">
+						<ItemTemplate>
+							<div class="row">
+								<div class="resultItem">
+									<div class="col-md-2 col-sm-4 col-xs-12 picture-area">
+										<div>
+											<div class="mbndcustomPicture"> 
+												<img class="img-thumbnail" src="Images/<%#Eval("PK_iMaBV") %>.jpg" alt="Bán CĂN 2 NGỦ+2 VINCITY SPORTIA GIÁ RẺ NHẤT LH:0965884838" title="Bán CĂN 2 NGỦ+2 VINCITY SPORTIA GIÁ RẺ NHẤT LH:0965884838">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-10 col-sm-8 col-xs-12 ">
+										<div class="row">
+											<div class="col-xs-12 col-md-9 title">
+												<a class="title-filter-link" href="thongtinchitiet.aspx?id=<%#Eval("PK_iMaBV") %>"><%#Eval("sTieude") %></a>
+											</div>
+											<div class="col-md-3 col-xs-12 text-right"><%#Eval("sGiaban") %> VNĐ</div>
+											<address id="MainContent_ctlList_ctlResults_repList_ctl00_0_divListingInformationAddress_0" class="col-md-6 col-xs-12">
+												<div class="col-xs-12"><%#Eval("sDiaChiCC") %></div>
+												<div class="col-xs-12"><%#Eval("dNgayDang") %></div>
+											</address>
+											<div id="MainContent_ctlList_ctlResults_repList_ctl00_0_divRightInformation_0" class="col-md-6 col-xs-12">
+												<div class="col-xs-12">Diện tích : <%#Eval("sDienTich") %> m²</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-10 col-sm-8 col-xs-12 ">
-								<div class="row">
-									<div class="col-xs-12 col-md-9 title">
-										<a class="title-filter-link" href="#">Bán CĂN 2 NGỦ+2 VINCITY SPORTIA GIÁ RẺ NHẤT LH:0965884838</a>
-									</div>
-									<div class="col-md-3 col-xs-12 text-right">2375 Triệu VNĐ</div>
-									<address id="MainContent_ctlList_ctlResults_repList_ctl00_0_divListingInformationAddress_0" class="col-md-6 col-xs-12">
-										<div class="col-xs-12">TP.Hà Nội</div>
-										<div class="col-xs-12">Huyện Từ Liêm</div>
-										<div class="col-xs-12">Ngày đăng: 23/03/2019</div>
-									</address>
-									<div id="MainContent_ctlList_ctlResults_repList_ctl00_0_divRightInformation_0" class="col-md-6 col-xs-12">
-										<div class="col-xs-12">Số phòng ngủ: 2</div>
-										<div class="col-xs-12">Diện tích : 70 m²</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+						</ItemTemplate>
+					</asp:ListView>
 				</div>
 				<div class="list-group-item list-footer text-center">
 					<div class="pagination"><ul class="pagination"><li class="active"><a>1</a></li><li><a href="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban/25">2</a></li><li><a href="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban/50">3</a></li><li class="next-page"><a href="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban/25">&gt;</a></li><li><a href="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban/250">Last ›</a></li></ul></div>        </div>
