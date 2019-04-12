@@ -51,8 +51,8 @@ namespace BTL_WEBNC.Backend
             if (check > 0)
             {
                 status = "showMessage('Thành công','Thêm bài viết thành công', 'warning', 'glyphicon-ok-sign');";
-               
-            }
+				Response.Redirect("DanhSachbaiViet.aspx");
+			}
             else
             {
                 status = "showMessage('Thất bại','Thêm bài viết không thành công. Vui lòng thử lại', 'warning', 'glyphicon-ok-sign');";

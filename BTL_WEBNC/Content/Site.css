@@ -12,11 +12,6 @@ body {
 }
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
 
 
 /* Responsive: Portrait tablets and up */
@@ -298,4 +293,114 @@ a:hover, a:focus {
 	display: inline-block;
 	margin: 10px 0;
 	padding-left: 0;
+}
+/* thong tin chi tiet */
+.detail-box {
+	margin: 20px auto;
+	background-color: #f5f5f5;
+	padding: 5px 10px;
+	padding-bottom: 20px;
+	border-radius: 4px;
+}
+.detail-box .detail-head {
+	margin: 10px 0;
+}
+.pull-left {
+	float: left;
+}
+.row-fluid {
+	word-wrap: break-word;
+}
+.detail-box .detail-head h1 {
+	padding: 0;
+	margin: 0;
+	font-weight: 400;
+	color: #1a171b;
+}
+.pgwSlideshow {
+	width: 100%;
+	background: #333;
+	display: none;
+}
+.pgwSlideshow, .pgwSlideshow .ps-list {
+	background-color: transparent !important;
+}
+.pgwSlideshow .ps-current {
+	text-align: center;
+	position: relative;
+	min-height: 150px;
+	overflow: hidden;
+}
+.pgwSlideshow .ps-current {
+	background-color: transparent !important;
+}
+.popup-gallery {
+	display: none;
+}
+.pgwSlideshow ul {
+	padding: 0 !important;
+}
+.pgwSlideshow .ps-current > ul > li {
+	width: 100% !important;
+}
+.detail-box .detail-address {
+	margin-bottom: 15px;
+}
+.detail-box .detail-address .title {
+	padding: 6px;
+	padding-bottom: 0;
+	display: inline-block;
+	font-weight: bold;
+	width: 100%;
+	border-bottom: 1px solid #ed1c24;
+}
+.detail-box .detail-attrs {
+	margin-bottom: 15px;
+	width: 100%;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.detail-box .detail-attrs > thead {
+	border-bottom: 1px solid #ed1c24;
+}
+table {
+	background-color: transparent;
+}
+.detail-box .detail-attrs > tbody > tr:nth-child(odd) {
+	background-color: #fff;
+}
+.spacer {
+	margin-bottom: 15px;
+}
+.panel {
+	margin-bottom: 12px;
+}
+.panel-contact > .panel-heading {
+	color: #f5f5f5;
+	background-color: #ed1c24;
+	border-color: #ed1c24;
+}
+.panel-contact .form-control {
+	border-color: #999;
+	background-color: #fff;
+}
+.form-control {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 16px;
+	line-height: 1.25;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ed1c24;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }

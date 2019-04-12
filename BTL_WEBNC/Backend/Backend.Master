@@ -65,7 +65,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="Login.aspx"><i class="fa fa-sign-out"></i></a>
+                            <a href="Logout.aspx"><i class="fa fa-sign-out"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -84,7 +84,7 @@
                     <li class="header text-center">------  CHỨC NĂNG HỆ THỐNG  ------</li>
                      <asp:Repeater ID="Repeater1" runat="server">
                         <ItemTemplate>
-                            <li><a href=""><i class=""></i> <span></span></a></li>
+                            <li><a href="#"><i class=""></i> <span></span></a></li>
                         </ItemTemplate>
                      </asp:Repeater>
                 </ul>
@@ -98,7 +98,7 @@
         </div>
         <footer class="main-footer">
              <div class="pull-right hidden-xs">Điện thoại hỗ trợ kỹ thuật: <b>01234546</b></div>
-            <strong>COPYRIGHT &copy; 2019 <a href="../Frontend/Home.aspx">Quản lý địa óc Hải Đăng.</a></strong>
+            <strong>COPYRIGHT &copy; 2019 <a href="../Default.aspx">Quản lý địa óc Hải Đăng.</a></strong>
         </footer>
     </div>
 </body>

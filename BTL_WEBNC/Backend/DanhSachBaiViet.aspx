@@ -11,7 +11,7 @@
       Danh sách bài viết
     </h1>
     <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
+      <li><a href="Welcome.aspx"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
       <li class="active">Danh sách bài viết</li>
     </ol>
   </section>
@@ -120,6 +120,7 @@
         </div><!-- /.box -->
       </div>  <!--end col 12-->
 </div>
+	</div>
       </form>
     </section><!-- /.content -->
     <script type="text/javascript">
