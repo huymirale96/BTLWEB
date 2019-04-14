@@ -29,74 +29,27 @@
 			<div class="container">
 				<div class="project ">
                     <div class="row project-1" role="toolbar">
-						<div class="col-md-3">
-							<div class="project-top project-vip">
-                                <div class="project-image">
-                                    <span class="star"><i aria-hidden="true"></i>Dự án nổi bật</span>
-                                    <a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng"><img style="width:100%; height:141px;" src="https://duan.muabannhadat.vn/wp-content/uploads/2018/12/cat-tuong-phu-hung-khu-do-thi-gioi-thieu-3-265x141.jpg" class="attachment-index size-index wp-post-image" alt=""></a>
-                                </div>
-                                <div class="project-content">
-                                    <h3><a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng">Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng</a></h3>
-                                    <p>Là khu đô thị phức hợp – cảnh quan quy mô 92,7ha đầu tiên tại trung tâm thành phố Đồng</p>
-                                </div><!--project-content-->
-                                <div class="project-cat">
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-loc.png">Bình Phước, Thành phố Đồng Xoài</p>
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-nal.png"><a tabindex="-1">Công ty Cổ phần Tập đoàn Địa ốc Cát Tường</a>
-                                    </p>
-                                </div>
-                            </div>
-						</div>
-						<div class="col-md-3">
-							<div class="project-top project-vip">
-                                <div class="project-image">
-                                    <span class="star"><i aria-hidden="true"></i>Dự án nổi bật</span>
-                                    <a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng"><img style="width:100%; height:141px;" src="https://duan.muabannhadat.vn/wp-content/uploads/2018/12/cat-tuong-phu-hung-khu-do-thi-gioi-thieu-3-265x141.jpg" class="attachment-index size-index wp-post-image" alt=""></a>
-                                </div>
-                                <div class="project-content">
-                                    <h3><a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng">Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng</a></h3>
-                                    <p>Là khu đô thị phức hợp – cảnh quan quy mô 92,7ha đầu tiên tại trung tâm thành phố Đồng</p>
-                                </div><!--project-content-->
-                                <div class="project-cat">
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-loc.png">Bình Phước, Thành phố Đồng Xoài</p>
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-nal.png"><a tabindex="-1">Công ty Cổ phần Tập đoàn Địa ốc Cát Tường</a>
-                                    </p>
-                                </div>
-                            </div>
-						</div>
-						<div class="col-md-3">
-							<div class="project-top project-vip">
-                                <div class="project-image">
-                                    <span class="star"><i aria-hidden="true"></i>Dự án nổi bật</span>
-                                    <a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng"><img style="width:100%; height:141px;" src="https://duan.muabannhadat.vn/wp-content/uploads/2018/12/cat-tuong-phu-hung-khu-do-thi-gioi-thieu-3-265x141.jpg" class="attachment-index size-index wp-post-image" alt=""></a>
-                                </div>
-                                <div class="project-content">
-                                    <h3><a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng">Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng</a></h3>
-                                    <p>Là khu đô thị phức hợp – cảnh quan quy mô 92,7ha đầu tiên tại trung tâm thành phố Đồng</p>
-                                </div><!--project-content-->
-                                <div class="project-cat">
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-loc.png">Bình Phước, Thành phố Đồng Xoài</p>
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-nal.png"><a tabindex="-1">Công ty Cổ phần Tập đoàn Địa ốc Cát Tường</a>
-                                    </p>
-                                </div>
-                            </div>
-						</div>
-						<div class="col-md-3">
-							<div class="project-top project-vip">
-                                <div class="project-image">
-                                    <span class="star"><i aria-hidden="true"></i>Dự án nổi bật</span>
-                                    <a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng"><img style="width:100%; height:141px;" src="https://duan.muabannhadat.vn/wp-content/uploads/2018/12/cat-tuong-phu-hung-khu-do-thi-gioi-thieu-3-265x141.jpg" class="attachment-index size-index wp-post-image" alt=""></a>
-                                </div>
-                                <div class="project-content">
-                                    <h3><a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng">Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng</a></h3>
-                                    <p>Là khu đô thị phức hợp – cảnh quan quy mô 92,7ha đầu tiên tại trung tâm thành phố Đồng</p>
-                                </div><!--project-content-->
-                                <div class="project-cat">
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-loc.png">Bình Phước, Thành phố Đồng Xoài</p>
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-nal.png"><a tabindex="-1">Công ty Cổ phần Tập đoàn Địa ốc Cát Tường</a>
-                                    </p>
-                                </div>
-                            </div>
-						</div>
+						<asp:ListView ID="ListView3" runat="server">
+							<ItemTemplate>
+								<div class="col-md-3">
+									<div class="project-top project-vip">
+										<div class="project-image">
+											<span class="star"><i aria-hidden="true"></i>Dự án nổi bật</span>
+											<a href="#" title="<%#Eval("sTieude") %>"><img style="width:100%; height:141px;" src="Images/<%#Eval("sImages") %>" class="attachment-index size-index wp-post-image" alt=""></a>
+										</div>
+										<div class="project-content">
+											<h3><a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng"><%#Eval("sTieude") %></a></h3>
+											<p><%#Eval("sMoTa") %></p>
+										</div><!--project-content-->
+										<div class="project-cat">
+											<p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-loc.png"><%#Eval("sDiaChiCC") %></p>
+											<p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-nal.png"><a tabindex="-1"><%#Eval("sCongTy") %></a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</ItemTemplate>
+						</asp:ListView>
 					</div>
 				</div>
 			</div>
@@ -107,86 +60,26 @@
 			<div class="container">
 				<div class="project ">
                     <div class="row project-1" role="toolbar">
-						<div class="col-md-3">
-							<div class="project-top project-vip">
-                                <div class="project-image">
-                                    <a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng"><img style="width:100%; height:141px;" src="https://duan.muabannhadat.vn/wp-content/uploads/2018/12/cat-tuong-phu-hung-khu-do-thi-gioi-thieu-3-265x141.jpg" class="attachment-index size-index wp-post-image" alt=""></a>
-                                </div>
-                                <div class="project-content">
-                                    <h3><a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng">Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng</a></h3>
-                                    <p>Là khu đô thị phức hợp – cảnh quan quy mô 92,7ha đầu tiên tại trung tâm thành phố Đồng</p>
-                                </div><!--project-content-->
-                                <div class="project-cat">
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-loc.png">Bình Phước, Thành phố Đồng Xoài</p>
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-nal.png"><a tabindex="-1">Công ty Cổ phần Tập đoàn Địa ốc Cát Tường</a>
-                                    </p>
-                                </div>
-                            </div>
-						</div>
-						<div class="col-md-3">
-							<div class="project-top project-vip">
-                                <div class="project-image">
-                                    <a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng"><img style="width:100%; height:141px;" src="https://duan.muabannhadat.vn/wp-content/uploads/2018/12/cat-tuong-phu-hung-khu-do-thi-gioi-thieu-3-265x141.jpg" class="attachment-index size-index wp-post-image" alt=""></a>
-                                </div>
-                                <div class="project-content">
-                                    <h3><a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng">Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng</a></h3>
-                                    <p>Là khu đô thị phức hợp – cảnh quan quy mô 92,7ha đầu tiên tại trung tâm thành phố Đồng</p>
-                                </div><!--project-content-->
-                                <div class="project-cat">
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-loc.png">Bình Phước, Thành phố Đồng Xoài</p>
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-nal.png"><a tabindex="-1">Công ty Cổ phần Tập đoàn Địa ốc Cát Tường</a>
-                                    </p>
-                                </div>
-                            </div>
-						</div>
-						<div class="col-md-3">
-							<div class="project-top project-vip">
-                                <div class="project-image">
-                                    <a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng"><img style="width:100%; height:141px;" src="https://duan.muabannhadat.vn/wp-content/uploads/2018/12/cat-tuong-phu-hung-khu-do-thi-gioi-thieu-3-265x141.jpg" class="attachment-index size-index wp-post-image" alt=""></a>
-                                </div>
-                                <div class="project-content">
-                                    <h3><a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng">Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng</a></h3>
-                                    <p>Là khu đô thị phức hợp – cảnh quan quy mô 92,7ha đầu tiên tại trung tâm thành phố Đồng</p>
-                                </div><!--project-content-->
-                                <div class="project-cat">
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-loc.png">Bình Phước, Thành phố Đồng Xoài</p>
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-nal.png"><a tabindex="-1">Công ty Cổ phần Tập đoàn Địa ốc Cát Tường</a>
-                                    </p>
-                                </div>
-                            </div>
-						</div>
-						<div class="col-md-3">
-							<div class="project-top project-vip">
-                                <div class="project-image">
-                                    <a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng"><img style="width:100%; height:141px;" src="https://duan.muabannhadat.vn/wp-content/uploads/2018/12/cat-tuong-phu-hung-khu-do-thi-gioi-thieu-3-265x141.jpg" class="attachment-index size-index wp-post-image" alt=""></a>
-                                </div>
-                                <div class="project-content">
-                                    <h3><a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng">Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng</a></h3>
-                                    <p>Là khu đô thị phức hợp – cảnh quan quy mô 92,7ha đầu tiên tại trung tâm thành phố Đồng</p>
-                                </div><!--project-content-->
-                                <div class="project-cat">
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-loc.png">Bình Phước, Thành phố Đồng Xoài</p>
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-nal.png"><a tabindex="-1">Công ty Cổ phần Tập đoàn Địa ốc Cát Tường</a>
-                                    </p>
-                                </div>
-                            </div>
-						</div>
-						<div class="col-md-3">
-							<div class="project-top project-vip">
-                                <div class="project-image">
-                                    <a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng"><img style="width:100%; height:141px;" src="https://duan.muabannhadat.vn/wp-content/uploads/2018/12/cat-tuong-phu-hung-khu-do-thi-gioi-thieu-3-265x141.jpg" class="attachment-index size-index wp-post-image" alt=""></a>
-                                </div>
-                                <div class="project-content">
-                                    <h3><a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng">Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng</a></h3>
-                                    <p>Là khu đô thị phức hợp – cảnh quan quy mô 92,7ha đầu tiên tại trung tâm thành phố Đồng</p>
-                                </div><!--project-content-->
-                                <div class="project-cat">
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-loc.png">Bình Phước, Thành phố Đồng Xoài</p>
-                                    <p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-nal.png"><a tabindex="-1">Công ty Cổ phần Tập đoàn Địa ốc Cát Tường</a>
-                                    </p>
-                                </div>
-                            </div>
-						</div>
+						<asp:ListView ID="ListView1" runat="server">
+							<ItemTemplate>
+								<div class="col-md-3">
+									<div class="project-top project-vip">
+										<div class="project-image">
+											<a href="#" title="<%#Eval("sTieude") %>"><img style="width:100%; height:141px;" src="Images/<%#Eval("sImages") %>" class="attachment-index size-index wp-post-image" alt=""></a>
+										</div>
+										<div class="project-content">
+											<h3><a href="#" title="<%#Eval("sTieude") %>"><%#Eval("sTieude") %></a></h3>
+											<p><%#Eval("sMoTa") %></p>
+										</div><!--project-content-->
+										<div class="project-cat">
+											<p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-loc.png"><%#Eval("sDiaChiCC") %></p>
+											<p><img src="https://duan.muabannhadat.vn/wp-content/themes/themenhadat/image/icon-nal.png"><a tabindex="-1"><%#Eval("sCongTy") %></a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</ItemTemplate>
+						</asp:ListView>
 					</div>
 					<div class="text-center">
 						<div class="pagination">

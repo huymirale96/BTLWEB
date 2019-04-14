@@ -39,7 +39,7 @@
 									<div class="col-xs-12 col-sm-6 col-lg-3">
 										<a href="#" class="object">
 											<div class="image"> 
-												<img class="img-responsive imageFeaturedBox" src="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-small="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-medium="https://thanhphongland.com/public/uploads/shop/2015/11/18/93ad9800c4d27566205d0e3e04603532.jpg" alt="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi" title="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi"> 
+												<img class="img-responsive imageFeaturedBox" src="Images/<%#Eval("sImages") %>"  alt="<%#Eval("sTieude") %>" > 
 											</div>
 											<p class="title" style="margin-bottom: 7px;"><%#Eval("sTieude") %></p>
 											<p class="location" style="margin-bottom: 5px;"><%#Eval("sDiaChiCC") %></p> 
@@ -58,7 +58,7 @@
 											<div class="col-md-2 col-sm-4 col-xs-12 picture-area">
 												<div>
 													<div class="mbndcustomPicture"> 
-														<img class="img-thumbnail" src="Images/<%#Eval("PK_iMaBV") %>.jpg" alt="Bán CĂN 2 NGỦ+2 VINCITY SPORTIA GIÁ RẺ NHẤT LH:0965884838" title="Bán CĂN 2 NGỦ+2 VINCITY SPORTIA GIÁ RẺ NHẤT LH:0965884838">
+														<img class="img-thumbnail" src="Images/<%#Eval("sImages") %>" alt="<%#Eval("sTieude") %>" title="<%#Eval("sTieude") %>">
 													</div>
 												</div>
 											</div>

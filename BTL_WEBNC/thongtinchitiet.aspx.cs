@@ -30,7 +30,7 @@ namespace BTL_WEBNC
 			da.Fill(dt);
 			if (dt.Rows.Count > 0)
 			{
-				Image1.ImageUrl = "Images/" + dt.Rows[0][0].ToString()+".jpg";
+				Image1.ImageUrl = "Images/" + dt.Rows[0][7].ToString();
 				sTieude.Text = (dt.Rows[0][1].ToString());
 				DiaDiem.Text = dt.Rows[0][4].ToString();
 				Gia.Text = dt.Rows[0][3].ToString();

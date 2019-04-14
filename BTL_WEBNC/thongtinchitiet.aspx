@@ -13,10 +13,10 @@
 					
 					<div class="col-md-6 col-xs-12">
 						<div class="pgwSlideshow wide" style="display: block;">
-							<div class="ps-current" style="height: 380px">
+							<div class="ps-current">
 								<ul>
 									<li class="elt_1" style="display: block; opacity: 1; z-index: 2;">
-										<asp:Image ID="Image1" ImageUrl='Images/1.jpg' runat="server" Width="100%"/>
+										<asp:Image ID="Image1" runat="server" Width="100%" height="517px" />
 									</li>
 								</ul>
 							</div>

@@ -33,8 +33,8 @@
 										<div class="mbnd-card  listing-tag-a-first">
 											<div class="listing-tag">
 												<div class="imgListing">
-													<a href="thongtinchitiet.aspx?id=<%#Eval("PK_iMaBV") %>">
-														<img class="img-responsive imageFeaturedBox" src="Images/<%#Eval("PK_iMaBV") %>.jpg" alt="<%#Eval("sTieude") %>">
+													<a href="thongtinchitiet.aspx?id=<%#Eval("PK_iDuan") %>">
+														<img class="img-responsive imageFeaturedBox" src="Images/<%#Eval("sImages") %>" alt="<%#Eval("sTieude") %>">
 													</a>
 												</div>
 											</div>
@@ -44,8 +44,8 @@
 														<%#Eval("sTieude") %>
 													</a>
 												</h3>
-												<p class="card-text"><%#Eval("sDiaChiCC") %></p>
-												<p class="card-price"><%#Eval("sGiaban") %> VNĐ</p>
+												<p class="card-text"><%#Eval("sCongTy") %></p>
+												<p class="card-price"><%#Eval("sQuyMo") %> VNĐ</p>
 											</div>
 										</div>
 									</div>
@@ -70,7 +70,7 @@
 											<div class="listing-tag">
 												<div class="imgListing">
 													<a href="thongtinchitiet.aspx?id=<%#Eval("PK_iMaBV") %>">
-														<img class="img-responsive imageFeaturedBox" src="Images/<%#Eval("PK_iMaBV") %>.jpg" alt="<%#Eval("sTieude") %>">
+														<img class="img-responsive imageFeaturedBox" src="Images/<%#Eval("sImages") %>" alt="<%#Eval("sTieude") %>">
 													</a>
 												</div>
 											</div>
@@ -106,7 +106,7 @@
 											<div class="listing-tag">
 												<div class="imgListing">
 													<a href="thongtinchitiet.aspx?id=<%#Eval("PK_iMaBV") %>">
-														<img class="img-responsive imageFeaturedBox" src="Images/<%#Eval("PK_iMaBV") %>.jpg" alt="<%#Eval("sTieude") %>">
+														<img class="img-responsive imageFeaturedBox" src="Images/<%#Eval("sImages") %>" alt="<%#Eval("sTieude") %>">
 													</a>
 												</div>
 											</div>

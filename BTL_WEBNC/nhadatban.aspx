@@ -39,7 +39,7 @@
 							<div class="col-xs-12 col-sm-6 col-lg-3">
 								<a href="thongtinchitiet.aspx?id=<%#Eval("PK_iMaBV") %>" class="object">
 									<div class="image"> 
-										<img class="img-responsive imageFeaturedBox" src="Images/<%#Eval("PK_iMaBV") %>.jpg" alt="<%#Eval("sTieude") %>" title="<%#Eval("sTieude") %>"> 
+										<img class="img-responsive imageFeaturedBox" src="Images/<%#Eval("sImages") %>" alt="<%#Eval("sTieude") %>" title="<%#Eval("sTieude") %>"> 
 									</div>
 									<p class="title" style="margin-bottom: 7px;"><%#Eval("sTieude") %></p>
 									<p class="location" style="margin-bottom: 5px;"><%#Eval("sDiaChiCC") %></p> 
@@ -58,7 +58,7 @@
 									<div class="col-md-2 col-sm-4 col-xs-12 picture-area">
 										<div>
 											<div class="mbndcustomPicture"> 
-												<img class="img-thumbnail" src="Images/<%#Eval("PK_iMaBV") %>.jpg" alt="Bán CĂN 2 NGỦ+2 VINCITY SPORTIA GIÁ RẺ NHẤT LH:0965884838" title="Bán CĂN 2 NGỦ+2 VINCITY SPORTIA GIÁ RẺ NHẤT LH:0965884838">
+												<img class="img-thumbnail" src="Images/<%#Eval("sImages") %>" alt="<%#Eval("sTieude") %>">
 											</div>
 										</div>
 									</div>

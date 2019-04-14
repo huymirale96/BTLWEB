@@ -43,7 +43,15 @@
                         <div class="col-md-12">
                            <div class="form-group">
                                 <label>Địa chỉ</label>
-                                    <asp:TextBox ID="sDiaChiCC" runat="server" CssClass="form-control" placeholder="Nhập họ và tên nhân viên..." onkeydown = "return (event.keyCode!=13);"></asp:TextBox>
+                                <asp:TextBox ID="sDiaChiCC" runat="server" CssClass="form-control" placeholder="Nhập ..." onkeydown = "return (event.keyCode!=13);"></asp:TextBox>
+                           </div>
+                        </div>
+						<div class="col-md-12">
+                           <div class="form-group">
+                                <label>FILE UPLOAD</label>
+                                    <asp:FileUpload ID="FileUpload1" runat="server" Width="348px" Height="27px" />
+								<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="FileUpload1" Display="None" ErrorMessage="Bạn cần chọn một tệp ảnh trước khi ấn nút &quot;Upload&quot;">
+								</asp:RequiredFieldValidator>
                            </div>
                         </div>
                     </div><!-- content1 -->
@@ -53,31 +61,31 @@
                                 <label>Giá</label>
                                     <asp:TextBox ID="sGiaban" runat="server" CssClass="form-control" placeholder="Nhập số điện thoại..." onkeydown = "return (event.keyCode!=13);"></asp:TextBox>  
                             </div>
-                     </div>
-                    
-                   <div class="col-md-12">
-                        <div class="form-group">
-                            <label>Danh mục</label>
-                                <asp:DropDownList ID="Danhmuc" runat="server" CssClass="form-control" onkeydown = "return (event.keyCode!=13);"></asp:DropDownList>
-                        </div>
-                    </div>
-
-                    
-                    <div class="col-md-12">
-                        <div class="form-group">
-                                <label>Chức năng</label><br />
-                                 <asp:Button ID="btnThemMoi" runat="server" Text="Thêm mới" 
-                                    CssClass="btn btn-primary" OnClick="btnThemMoi_Click"  ></asp:Button>
-                                    <asp:Button ID="btnUpdateInfo" runat="server" Text="Xác nhận" 
-                                    CssClass="btn btn-primary" OnClick="btnUpdateInfo_Click"  ></asp:Button>
-                                 <asp:Button ID="btnNhapLai" runat="server" Text="Nhập lại" CssClass="btn btn-danger"></asp:Button>  
-                            
-                                <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+						</div>
+						<div class="col-md-12">
+                            <div class="form-group">
+                                <label>Diện Tích</label>
+                                    <asp:TextBox ID="sDienTich" runat="server" CssClass="form-control" placeholder="Nhập Diện Tích..." onkeydown = "return (event.keyCode!=13);"></asp:TextBox>  
                             </div>
-                        </div>
-                    </div>
-                    
-                    
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label>Danh mục</label>
+									<asp:DropDownList ID="Danhmuc" runat="server" CssClass="form-control" onkeydown = "return (event.keyCode!=13);"></asp:DropDownList>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label>Chức năng</label><br />
+								<asp:Button ID="btnThemMoi" runat="server" Text="Thêm mới" 
+									CssClass="btn btn-primary" OnClick="btnThemMoi_Click"  ></asp:Button>
+								<asp:Button ID="btnUpdateInfo" runat="server" Text="Xác nhận" 
+									CssClass="btn btn-primary" OnClick="btnUpdateInfo_Click"  ></asp:Button>
+								<asp:Button ID="btnNhapLai" runat="server" Text="Nhập lại" CssClass="btn btn-danger"></asp:Button>  
+								<asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+							</div>
+						</div>
+					</div>
                     
                     <div class="col-md-12">
                         <hr />
@@ -107,7 +115,7 @@
                                         <td class="text-center"><%#Eval("dNgayDang") %></td>
                                         <td class="text-center"><%#Eval("sTenDanhmuc") %></td>
                                         <td class="text-center">
-                                            <asp:LinkButton ID="btnSuaThongTin" runat="server" CssClass="btn btn-success btn-sm"  CommandArgument='<%#Eval("PK_iMaBV") %>' OnClick="btnSuaThongTin_Click"><i class="fa fa-pencil"></i></asp:LinkButton>
+											<asp:LinkButton ID="btnSuaThongTinBV" runat="server" CssClass="btn btn-success btn-sm"  CommandArgument='<%#Eval("PK_iMaBV") %>' OnClick="btnSuaThongTinBV_Click"><i class="fa fa-pencil"></i></asp:LinkButton>
                                             <asp:LinkButton id="btnXoaNhanVien" runat="server" CssClass="btn btn-danger btn-sm"  CommandArgument='<%#Eval("PK_iMaBV") %>' OnClientClick="return confirm('Bạn có muốn bài viết này không ?');" OnClick="btnXoaNhanVien_Click"><i class="fa fa-trash"></i></asp:LinkButton>
                                         </td>
                                     </tr>
