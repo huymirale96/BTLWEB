@@ -49,9 +49,8 @@
 						<div class="col-md-12">
                            <div class="form-group">
                                 <label>FILE UPLOAD</label>
-                                    <asp:FileUpload ID="FileUpload1" runat="server" Width="348px" Height="27px" />
-								<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="FileUpload1" Display="None" ErrorMessage="Bạn cần chọn một tệp ảnh trước khi ấn nút &quot;Upload&quot;">
-								</asp:RequiredFieldValidator>
+                                <asp:FileUpload ID="FileUpload1" runat="server" Width="348px" Height="27px" Visible="true"/>
+								<asp:Label ID="UploadStatusLabel" runat="server"></asp:Label>
                            </div>
                         </div>
                     </div><!-- content1 -->

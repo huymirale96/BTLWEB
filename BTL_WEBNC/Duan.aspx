@@ -35,10 +35,10 @@
 									<div class="project-top project-vip">
 										<div class="project-image">
 											<span class="star"><i aria-hidden="true"></i>Dự án nổi bật</span>
-											<a href="#" title="<%#Eval("sTieude") %>"><img style="width:100%; height:141px;" src="Images/<%#Eval("sImages") %>" class="attachment-index size-index wp-post-image" alt=""></a>
+											<a href="thongtinduan.aspx?id=<%#Eval("PK_iDuan") %>" title="<%#Eval("sTieude") %>"><img style="width:100%; height:141px;" src="Images/<%#Eval("sImages") %>" class="attachment-index size-index wp-post-image" alt=""></a>
 										</div>
 										<div class="project-content">
-											<h3><a href="#" title="Khu đô thị phức hợp – cảnh quan Cát Tường Phú Hưng"><%#Eval("sTieude") %></a></h3>
+											<h3><a href="thongtinduan.aspx?id=<%#Eval("PK_iDuan") %>" title="<%#Eval("sTieude") %>"><%#Eval("sTieude") %></a></h3>
 											<p><%#Eval("sMoTa") %></p>
 										</div><!--project-content-->
 										<div class="project-cat">
@@ -65,10 +65,10 @@
 								<div class="col-md-3">
 									<div class="project-top project-vip">
 										<div class="project-image">
-											<a href="#" title="<%#Eval("sTieude") %>"><img style="width:100%; height:141px;" src="Images/<%#Eval("sImages") %>" class="attachment-index size-index wp-post-image" alt=""></a>
+											<a href="thongtinduan.aspx?id=<%#Eval("PK_iDuan") %>" title="<%#Eval("sTieude") %>"><img style="width:100%; height:141px;" src="Images/<%#Eval("sImages") %>" class="attachment-index size-index wp-post-image" alt=""></a>
 										</div>
 										<div class="project-content">
-											<h3><a href="#" title="<%#Eval("sTieude") %>"><%#Eval("sTieude") %></a></h3>
+											<h3><a href="thongtinduan.aspx?id=<%#Eval("PK_iDuan") %>" title="<%#Eval("sTieude") %>"><%#Eval("sTieude") %></a></h3>
 											<p><%#Eval("sMoTa") %></p>
 										</div><!--project-content-->
 										<div class="project-cat">

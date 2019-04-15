@@ -1,9 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="Site.master" CodeBehind="nhadatban.aspx.cs" Inherits="BTL_WEBNC.nhadatban" %>
 
 <asp:Content ID="nhadatban" ContentPlaceHolderID="MainContent" runat="server">
-	<div class="container main bs-docs-container">
+<div class="container main bs-docs-container">
     <div class="row" role="main">
-      <div class="container">
+		<div class="container">
   <h1 class="headline"> Nhà đất bán </h1>
 	<div class="row">
 		<div class="col-xs-12 col-md-8 col-lg-9 col-md-push-4 col-lg-push-3">
@@ -82,9 +82,13 @@
 						</ItemTemplate>
 					</asp:ListView>
 				</div>
-				<div class="list-group-item list-footer text-center">
-					<div class="pagination"><ul class="pagination"><li class="active"><a>1</a></li><li><a href="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban/25">2</a></li><li><a href="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban/50">3</a></li><li class="next-page"><a href="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban/25">&gt;</a></li><li><a href="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban/250">Last ›</a></li></ul></div>        </div>
-				</div>
+				<!--<div class="list-group-item list-footer text-center">
+					<div class="pagination">
+						<ul class="pagination">
+							<li class="active"><a>1</a></li><li><a href="">2</a></li><li><a href="">3</a></li><li class="next-page"><a href="">&gt;</a></li><li><a href="">Last ›</a></li></ul>
+					</div>
+				</div>-->
+			</div>
 		</div>
 		<form action="#" method="get" novalidate="novalidate">
 			<div class="col-xs-12 col-md-4 col-lg-3 col-md-pull-8 col-lg-pull-9" id="jump2filter">
@@ -124,22 +128,22 @@
 			</div>
 		</form>
 	</div>
-  <!--Ad:Leaderboard-->
-	<div class="col-xs-12 col-md-8 col-lg-9 col-md-push-4 col-lg-push-3 hidden-xs">
-		<div class="panel panel-feature">
-			<div class="row"> 
-				<div class="panel-body leaderboard2producthome">
-					<a href="#" target="_blank" title="728x90"> 
-						<img src="https://thanhphongland.com/public/uploads/ads/2015/12/11/10/a4564330c678838bd6fc33e904f17f1c.jpg" title="728x90"> 
-					</a>
-				</div>  
+			<!--Ad:Leaderboard-->
+			<div class="col-xs-12 col-md-8 col-lg-9 col-md-push-4 col-lg-push-3 hidden-xs">
+				<div class="panel panel-feature">
+					<div class="row"> 
+						<div class="panel-body leaderboard2producthome">
+							<a href="#" target="_blank" title="728x90"> 
+								<img src="https://thanhphongland.com/public/uploads/ads/2015/12/11/10/a4564330c678838bd6fc33e904f17f1c.jpg" title="728x90"> 
+							</a>
+						</div>  
+					</div>
+				</div>
+			</div>
+			<div id="MainContent_teaser" class="well col-xs-12 col-md-8 col-lg-9 col-md-push-4 col-lg-push-3">
+				<span> Bạn đang cần những mặt bằng, khu đất để đầu tư cho các dự án thương mại hoặc cửa hàng kinh doanh? Bạn cần mua lại những mặt bằng đang có sẵn để mở rộng việc kinh doanh? Tìm ngay và liên hệ với người bán nhanh chóng. </span>
 			</div>
 		</div>
-	</div>
-	<div id="MainContent_teaser" class="well col-xs-12 col-md-8 col-lg-9 col-md-push-4 col-lg-push-3">
-		<span> Bạn đang cần những mặt bằng, khu đất để đầu tư cho các dự án thương mại hoặc cửa hàng kinh doanh? Bạn cần mua lại những mặt bằng đang có sẵn để mở rộng việc kinh doanh? Tìm ngay và liên hệ với người bán nhanh chóng. </span>
-	</div>
-</div>
 
 <!--Ad:Leaderboard
 <script>
@@ -156,6 +160,6 @@
 	});
 </script>    
 -->
-		</div>
 	</div>
+</div>
 </asp:Content>

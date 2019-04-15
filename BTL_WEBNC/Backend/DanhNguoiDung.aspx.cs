@@ -34,7 +34,7 @@ namespace BTL_WEBNC.Backend
         }
         protected void btnSuaThongTin_Click(object sender, EventArgs e)
         {
-            LinkButton btn = (LinkButton)sender;
+			LinkButton btn = (LinkButton)sender;
             int makh = Int32.Parse(btn.CommandArgument);
             SqlCommand cmd = new SqlCommand("IUD_KhachHang", cnn);
             cmd.CommandType = CommandType.StoredProcedure;

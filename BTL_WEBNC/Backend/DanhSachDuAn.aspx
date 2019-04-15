@@ -4,15 +4,15 @@
     <script src="../Scripts/jquery-3.3.1.min.js"></script>
     <script src="../Scripts/jquery-3.3.1.js"></script>
 </asp:Content>
-<asp:Content ID="Contentda" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <div class="content-wrapper">
   <section class="content-header">
     <h1>
-      Danh sách DỰ Án
+      Danh sách khách hàng
     </h1>
     <ol class="breadcrumb">
       <li><a href="Welcome.aspx"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
-      <li class="active">Danh sách DỰ Án</li>
+      <li class="active">Danh sách khách hàng</li>
     </ol>
   </section>
 
@@ -49,15 +49,14 @@
                             <asp:TextBox ID="sDiaChiCC" runat="server" CssClass="form-control" placeholder="Nhập ..." onkeydown = "return (event.keyCode!=13);"></asp:TextBox>
                        </div>
                     </div>
-					<div class="col-md-3">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <label>FILE UPLOAD</label>
                             <asp:FileUpload ID="FileUpload1" runat="server" Width="348px" Height="27px" />
-							<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="FileUpload1" Display="None" ErrorMessage="Bạn cần chọn một tệp ảnh trước khi ấn nút &quot;Upload&quot;">
-								</asp:RequiredFieldValidator>
+							<asp:Label ID="UploadStatusLabel" runat="server"></asp:Label>
                         </div>
                     </div>
-                     <div class="col-md-3">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <label>Diện Tích</label>
                             <asp:TextBox ID="sDienTich" runat="server" CssClass="form-control" placeholder="Nhập Diện Tích..." onkeydown = "return (event.keyCode!=13);"></asp:TextBox>  
@@ -78,9 +77,10 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>Chức năng</label><br />
-                             <asp:Button ID="btnThemMoi" runat="server" Text="Thêm mới" CssClass="btn btn-primary" OnClick="btnThemMoi_Click"></asp:Button>
-                                <asp:Button ID="btnUpdateInfo" runat="server" Text="Xác nhận" 
-                                CssClass="btn btn-primary" OnClick="btnUpdateInfo_Click" ></asp:Button>
+                            <asp:Button ID="btnThemMoi" runat="server" Text="Thêm mới" 
+									CssClass="btn btn-primary" OnClick="btnThemMoi_Click"  ></asp:Button>
+                             <asp:Button ID="btnUpdateInfo" runat="server" Text="Xác nhận" 
+                                CssClass="btn btn-primary" OnClick="btnUpdateInfo_Click"  ></asp:Button>
                              <asp:Button ID="btnNhapLai" runat="server" Text="Nhập lại" CssClass="btn btn-danger"></asp:Button>  
                             
                             <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="col-md-12">
                         <table class="table table-bordered table-hover">
-                        <caption class="text-center"><h4>DANH SÁCH TÀI KHOẢN, NHÂN VIÊN</h4></caption>
+                        <caption class="text-center"><h4>DANH SÁCH TÀI KHOẢN KHÁCH HÀNG</h4></caption>
                         <thead>
                             <th class="text-center col-md-1">STT</th>
                             <th class="text-center col-md-1">Tên tài khoản</th>                            
@@ -102,23 +102,23 @@
                             <th class="text-center col-md-1">Địa chỉ</th>
                             <th class="text-center col-md-1">Diện Tích</th>
                             <th class="text-center col-md-1">Công Ty</th>
-							<th class="text-center col-md-1">Chức Năng</th>
+                            <th class="text-center col-md-2">Chức năng</th>
                         </thead>
                         <tbody>
-                            <asp:Repeater ID="RepeaterDuAn" runat="server">
+							<asp:Repeater ID="Repeater2" runat="server">
                                 <ItemTemplate>
                                     <tr>
                                         <td class="text-center"><%# Container.ItemIndex + 1 %></td>
                                         <td><%#Eval("sTieuDe") %></td>
-                                        <td class="text-center"><%#Eval("[sMoTa]") %></td>
-                                        <td><%#Eval("sNoiDung") %></td>
-                                        <td><%#Eval("sQuyMo") %></td>
+										<td class="text-center"><%#Eval("[sMoTa]") %></td>
+										<td><%#Eval("sNoiDung") %></td>
+										<td><%#Eval("sQuyMo") %></td>
                                         <td><%#Eval("sDiaChiCC") %></td>
 										<td><%#Eval("sDienTich") %></td>
 										<td><%#Eval("sCongTy") %></td>
                                         <td class="text-center">
                                             <asp:LinkButton ID="btnSuaThongTin" runat="server" CssClass="btn btn-success btn-sm"  CommandArgument='<%#Eval("PK_iDuan") %>' OnClick="btnSuaThongTin_Click"><i class="fa fa-pencil"></i></asp:LinkButton>
-                                            <asp:LinkButton id="btnXoaNhanVien" runat="server" CssClass="btn btn-danger btn-sm"  CommandArgument='<%#Eval("PK_iDuan") %>' OnClientClick="return confirm('Bạn có muốn khóa tài khoản, nhân viên này không ?');" ><i class="fa fa-lock"></i></asp:LinkButton>
+                                            <asp:LinkButton id="btnXoaNhanVien" runat="server" CssClass="btn btn-danger btn-sm"  CommandArgument='<%#Eval("PK_iDuan") %>' OnClientClick="return confirm('Bạn có muốn bài viết này không ?');" OnClick="btnXoaNhanVien_Click"><i class="fa fa-lock"></i></asp:LinkButton>
                                         </td>
                                     </tr>
                                 </ItemTemplate>
@@ -132,10 +132,10 @@
 </div>
       </form>
     </section><!-- /.content -->
-    <script type="text/javascript">
+    <%--<script type="text/javascript">
         window.onload = function (e) { 
            <%=status %>
         }
-    </script>
+    </script>--%>
   </div><!-- /.content-wrapper -->
 </asp:Content>

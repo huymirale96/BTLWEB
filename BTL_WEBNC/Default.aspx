@@ -33,7 +33,7 @@
 										<div class="mbnd-card  listing-tag-a-first">
 											<div class="listing-tag">
 												<div class="imgListing">
-													<a href="thongtinchitiet.aspx?id=<%#Eval("PK_iDuan") %>">
+													<a href="thongtinduan.aspx?id=<%#Eval("PK_iDuan") %>">
 														<img class="img-responsive imageFeaturedBox" src="Images/<%#Eval("sImages") %>" alt="<%#Eval("sTieude") %>">
 													</a>
 												</div>
@@ -57,7 +57,7 @@
 				<div class="panel mbnd-panel-feature">
 					<div class="panel-heading">
 						<h2 class="title-h2 text-uppercase">
-							Bất động sản nổi bật
+							Bất động sản Bán nổi bật
 							<a class="btn-showmore pull-right" href="nhadatban.aspx">Xem thêm</a>
 						</h2>
 					</div>
@@ -93,8 +93,8 @@
 				<div class="panel mbnd-panel-feature">
 					<div class="panel-heading">
 						<h2 class="title-h2 text-uppercase">
-							Tin Tức Nổi Bật
-							<a class="btn-showmore pull-right" href="nhadatban.aspx">Xem thêm</a>
+							Bất động sản Cho Thuê nổi bật
+							<a class="btn-showmore pull-right" href="nhadatchothue.aspx">Xem thêm</a>
 						</h2>
 					</div>
 					<div class="panel-body">
