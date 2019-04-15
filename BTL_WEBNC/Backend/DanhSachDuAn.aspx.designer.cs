@@ -10,7 +10,7 @@
 namespace BTL_WEBNC.Backend {
     
     
-    public partial class DanhSachBaiViet {
+    public partial class DanhSachDuAn {
         
         /// <summary>
         /// form1 control.
@@ -22,22 +22,31 @@ namespace BTL_WEBNC.Backend {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// sTieude control.
+        /// TenDuAn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox sTieude;
+        protected global::System.Web.UI.WebControls.TextBox TenDuAn;
         
         /// <summary>
-        /// sNoidung control.
+        /// Mota control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox sNoidung;
+        protected global::System.Web.UI.WebControls.TextBox Mota;
+        
+        /// <summary>
+        /// sQuyMo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox sQuyMo;
         
         /// <summary>
         /// sDiaChiCC control.
@@ -67,15 +76,6 @@ namespace BTL_WEBNC.Backend {
         protected global::System.Web.UI.WebControls.Label UploadStatusLabel;
         
         /// <summary>
-        /// sGiaban control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox sGiaban;
-        
-        /// <summary>
         /// sDienTich control.
         /// </summary>
         /// <remarks>
@@ -85,13 +85,22 @@ namespace BTL_WEBNC.Backend {
         protected global::System.Web.UI.WebControls.TextBox sDienTich;
         
         /// <summary>
-        /// Danhmuc control.
+        /// sCongTy control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList Danhmuc;
+        protected global::System.Web.UI.WebControls.TextBox sCongTy;
+        
+        /// <summary>
+        /// sNoiDungDA control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox sNoiDungDA;
         
         /// <summary>
         /// btnThemMoi control.
@@ -130,12 +139,12 @@ namespace BTL_WEBNC.Backend {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// Repeater1 control.
+        /// Repeater2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Repeater1;
+        protected global::System.Web.UI.WebControls.Repeater Repeater2;
     }
 }

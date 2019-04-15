@@ -37,7 +37,8 @@ namespace BTL_WEBNC.Backend
 			cmd.Parameters.AddWithValue("@sTenHoaDon", sTenHoaDon.Text);
 			cmd.Parameters.AddWithValue("@sNoidungGD", sNoidungGD.Text);
 			cmd.Parameters.AddWithValue("@sTongTien", sTongTien.Text);
-			cmd.Parameters.AddWithValue("@dNgayLapHD", DateTime.Now.ToString("yyyy-MM-dd"));
+			DateTime date = Convert.ToDateTime(DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss"));
+			cmd.Parameters.AddWithValue("@dNgayLapHD", date);
 			cmd.Parameters.AddWithValue("@FK_iTaikhoan", matk);
 			cmd.Parameters.AddWithValue("@action", "insert");
 			int check = cmd.ExecuteNonQuery();

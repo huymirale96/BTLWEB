@@ -64,9 +64,6 @@
 							<li>
 								<a runat="server" href="Duan">Dự án</a>
 							</li>
-							<li>
-								<a runat="server" href="Duan">Tin Tức</a>
-							</li>
 						</ul>
 						<ul id="loginStatus" class="nav navbar-right navbar-nav">
 							<% if (Session["ma_taikhoan"] != null)
