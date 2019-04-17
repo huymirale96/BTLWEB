@@ -11,7 +11,7 @@ namespace BTL_WEBNC.Backend
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //
         }
     }
 }

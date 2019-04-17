@@ -7,6 +7,7 @@ namespace BTL_WEBNC.Backend.Services
 {
     public class DSLichSuGD1
     {
+        //
         public string sTenHoaDon { get; set; }
         public string sNoiDungsua { get; set; }
         public string dNgayLapHD { get; set; }
