@@ -133,8 +133,247 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <Content Include="Contact.aspx" />
+    <Content Include="Backend\Dangky.aspx" />
+    <Content Include="Backend\DanhNguoiDung.aspx" />
+    <Content Include="Backend\DanhSachBaiViet.aspx" />
+    <Content Include="Backend\DanhSachTaiKhoan.aspx" />
+    <Content Include="Backend\DoiMatKhau.aspx" />
+    <Content Include="Backend\GiaoDich.aspx" />
+    <Content Include="Backend\KhongDuThamQuyen.aspx" />
+    <Content Include="Backend\LichSuGD.aspx" />
+    <Content Include="Backend\Login.aspx" />
+    <Content Include="Backend\Logout.aspx" />
+    <Content Include="Backend\Services\DSLichSuGD.asmx" />
+    <Content Include="Backend\Thongtincanhan.aspx" />
+    <Content Include="Backend\Welcome.aspx" />
+    <Content Include="Content\backend\AdminLTE.min.css" />
+    <Content Include="Content\backend\bootstrap.min.css" />
+    <Content Include="Content\backend\datatables\dataTables.bootstrap.css" />
+    <Content Include="Content\backend\datatables\dataTables.bootstrap.js" />
+    <Content Include="Content\backend\datatables\dataTables.bootstrap.min.js" />
+    <Content Include="Content\backend\datatables\extensions\AutoFill\css\dataTables.autoFill.css" />
+    <Content Include="Content\backend\datatables\extensions\AutoFill\css\dataTables.autoFill.min.css" />
+    <Content Include="Content\backend\datatables\extensions\AutoFill\examples\columns.html" />
+    <Content Include="Content\backend\datatables\extensions\AutoFill\examples\complete-callback.html" />
+    <Content Include="Content\backend\datatables\extensions\AutoFill\examples\fill-both.html" />
+    <Content Include="Content\backend\datatables\extensions\AutoFill\examples\fill-horizontal.html" />
+    <Content Include="Content\backend\datatables\extensions\AutoFill\examples\index.html" />
+    <Content Include="Content\backend\datatables\extensions\AutoFill\examples\scrolling.html" />
+    <Content Include="Content\backend\datatables\extensions\AutoFill\examples\simple.html" />
+    <Content Include="Content\backend\datatables\extensions\AutoFill\examples\step-callback.html" />
+    <Content Include="Content\backend\datatables\extensions\AutoFill\images\filler.png" />
+    <Content Include="Content\backend\datatables\extensions\AutoFill\js\dataTables.autoFill.js" />
+    <Content Include="Content\backend\datatables\extensions\AutoFill\js\dataTables.autoFill.min.js" />
+    <Content Include="Content\backend\datatables\extensions\AutoFill\Readme.txt" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\css\dataTables.colReorder.css" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\css\dataTables.colReorder.min.css" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\examples\alt_insert.html" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\examples\colvis.html" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\examples\col_filter.html" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\examples\fixedcolumns.html" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\examples\fixedheader.html" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\examples\index.html" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\examples\jqueryui.html" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\examples\new_init.html" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\examples\predefined.html" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\examples\realtime.html" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\examples\reset.html" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\examples\scrolling.html" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\examples\server_side.html" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\examples\simple.html" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\examples\state_save.html" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\images\insert.png" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\js\dataTables.colReorder.js" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\js\dataTables.colReorder.min.js" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\License.txt" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\css\dataTables.colVis.css" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\css\dataTables.colvis.jqueryui.css" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\css\dataTables.colVis.min.css" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\examples\button_order.html" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\examples\exclude_columns.html" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\examples\group_columns.html" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\examples\index.html" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\examples\jqueryui.html" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\examples\mouseover.html" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\examples\new_init.html" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\examples\restore.html" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\examples\simple.html" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\examples\text.html" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\examples\title_callback.html" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\examples\two_tables.html" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\examples\two_tables_identical.html" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\js\dataTables.colVis.js" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\js\dataTables.colVis.min.js" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\License.txt" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\css\dataTables.fixedColumns.css" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\css\dataTables.fixedColumns.min.css" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\examples\bootstrap.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\examples\colvis.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\examples\col_filter.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\examples\css_size.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\examples\index.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\examples\index_column.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\examples\left_right_columns.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\examples\right_column.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\examples\rowspan.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\examples\server-side-processing.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\examples\simple.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\examples\size_fixed.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\examples\size_fluid.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\examples\two_columns.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\js\dataTables.fixedColumns.js" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\js\dataTables.fixedColumns.min.js" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\License.txt" />
+    <Content Include="Content\backend\datatables\extensions\FixedHeader\css\dataTables.fixedHeader.css" />
+    <Content Include="Content\backend\datatables\extensions\FixedHeader\css\dataTables.fixedHeader.min.css" />
+    <Content Include="Content\backend\datatables\extensions\FixedHeader\examples\header_footer.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedHeader\examples\index.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedHeader\examples\simple.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedHeader\examples\top_left_right.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedHeader\examples\two_tables.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedHeader\examples\zIndexes.html" />
+    <Content Include="Content\backend\datatables\extensions\FixedHeader\js\dataTables.fixedHeader.js" />
+    <Content Include="Content\backend\datatables\extensions\FixedHeader\js\dataTables.fixedHeader.min.js" />
+    <Content Include="Content\backend\datatables\extensions\FixedHeader\Readme.txt" />
+    <Content Include="Content\backend\datatables\extensions\KeyTable\css\dataTables.keyTable.css" />
+    <Content Include="Content\backend\datatables\extensions\KeyTable\css\dataTables.keyTable.min.css" />
+    <Content Include="Content\backend\datatables\extensions\KeyTable\examples\events.html" />
+    <Content Include="Content\backend\datatables\extensions\KeyTable\examples\html.html" />
+    <Content Include="Content\backend\datatables\extensions\KeyTable\examples\index.html" />
+    <Content Include="Content\backend\datatables\extensions\KeyTable\examples\scrolling.html" />
+    <Content Include="Content\backend\datatables\extensions\KeyTable\examples\simple.html" />
+    <Content Include="Content\backend\datatables\extensions\KeyTable\js\dataTables.keyTable.js" />
+    <Content Include="Content\backend\datatables\extensions\KeyTable\js\dataTables.keyTable.min.js" />
+    <Content Include="Content\backend\datatables\extensions\KeyTable\Readme.txt" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\css\dataTables.responsive.css" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\child-rows\column-control.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\child-rows\custom-renderer.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\child-rows\disable-child-rows.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\child-rows\index.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\child-rows\right-column.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\child-rows\whole-row-control.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\display-control\auto.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\display-control\classes.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\display-control\complexHeader.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\display-control\fixedHeader.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\display-control\index.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\display-control\init-classes.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\index.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\initialisation\ajax.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\initialisation\className.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\initialisation\default.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\initialisation\index.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\initialisation\new.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\initialisation\option.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\styling\bootstrap.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\styling\compact.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\styling\foundation.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\styling\index.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\examples\styling\scrolling.html" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\js\dataTables.responsive.js" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\js\dataTables.responsive.min.js" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\License.txt" />
+    <Content Include="Content\backend\datatables\extensions\Scroller\css\dataTables.scroller.css" />
+    <Content Include="Content\backend\datatables\extensions\Scroller\css\dataTables.scroller.min.css" />
+    <Content Include="Content\backend\datatables\extensions\Scroller\examples\api_scrolling.html" />
+    <Content Include="Content\backend\datatables\extensions\Scroller\examples\data\2500.txt" />
+    <Content Include="Content\backend\datatables\extensions\Scroller\examples\data\ssp.php" />
+    <Content Include="Content\backend\datatables\extensions\Scroller\examples\index.html" />
+    <Content Include="Content\backend\datatables\extensions\Scroller\examples\large_js_source.html" />
+    <Content Include="Content\backend\datatables\extensions\Scroller\examples\server-side_processing.html" />
+    <Content Include="Content\backend\datatables\extensions\Scroller\examples\simple.html" />
+    <Content Include="Content\backend\datatables\extensions\Scroller\examples\state_saving.html" />
+    <Content Include="Content\backend\datatables\extensions\Scroller\images\loading-background.png" />
+    <Content Include="Content\backend\datatables\extensions\Scroller\js\dataTables.scroller.js" />
+    <Content Include="Content\backend\datatables\extensions\Scroller\js\dataTables.scroller.min.js" />
+    <Content Include="Content\backend\datatables\extensions\Scroller\Readme.txt" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\css\dataTables.tableTools.css" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\css\dataTables.tableTools.min.css" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\ajax.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\alter_buttons.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\bootstrap.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\button_text.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\collection.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\defaults.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\index.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\jqueryui.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\multiple_tables.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\multi_instance.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\new_init.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\pdf_message.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\plug-in.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\select_column.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\select_multi.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\select_os.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\select_single.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\simple.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\examples\swf_path.html" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\images\collection.png" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\images\collection_hover.png" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\images\copy.png" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\images\copy_hover.png" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\images\csv.png" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\images\csv_hover.png" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\images\pdf.png" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\images\pdf_hover.png" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\images\print.png" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\images\print_hover.png" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\images\xls.png" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\images\xls_hover.png" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\js\dataTables.tableTools.js" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\js\dataTables.tableTools.min.js" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\swf\copy_csv_xls.swf" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\swf\copy_csv_xls_pdf.swf" />
+    <Content Include="Content\backend\datatables\images\sort_asc.png" />
+    <Content Include="Content\backend\datatables\images\sort_asc_disabled.png" />
+    <Content Include="Content\backend\datatables\images\sort_both.png" />
+    <Content Include="Content\backend\datatables\images\sort_desc.png" />
+    <Content Include="Content\backend\datatables\images\sort_desc_disabled.png" />
+    <Content Include="Content\backend\datatables\jquery.dataTables.min.css" />
+    <Content Include="Content\backend\datatables\jquery.dataTables.min.js" />
+    <Content Include="Content\backend\datatables\jquery.dataTables_themeroller.css" />
+    <Content Include="Content\backend\font-awesome.min.css" />
+    <Content Include="Content\backend\fontawesome\css\font-awesome.css" />
+    <Content Include="Content\backend\fontawesome\css\font-awesome.min.css" />
+    <Content Include="Content\backend\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\backend\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\backend\ionicons\css\ionicons.min.css" />
+    <Content Include="Content\backend\ionicons\fonts\ionicons.svg" />
+    <Content Include="Content\backend\metisMenu.min.css" />
+    <Content Include="Content\backend\pnotify.custom.min.css" />
+    <Content Include="Content\backend\sb-admin-2.css" />
+    <Content Include="Content\backend\skin-green.min.css" />
+    <Content Include="Content\backend\square\aero%402x.png" />
+    <Content Include="Content\backend\square\aero.css" />
+    <Content Include="Content\backend\square\aero.png" />
+    <Content Include="Content\backend\square\blue%402x.png" />
+    <Content Include="Content\backend\square\blue.css" />
+    <Content Include="Content\backend\square\blue.png" />
+    <Content Include="Content\backend\square\green%402x.png" />
+    <Content Include="Content\backend\square\green.css" />
+    <Content Include="Content\backend\square\green.png" />
+    <Content Include="Content\backend\square\grey%402x.png" />
+    <Content Include="Content\backend\square\grey.css" />
+    <Content Include="Content\backend\square\grey.png" />
+    <Content Include="Content\backend\square\orange%402x.png" />
+    <Content Include="Content\backend\square\orange.css" />
+    <Content Include="Content\backend\square\orange.png" />
+    <Content Include="Content\backend\square\pink%402x.png" />
+    <Content Include="Content\backend\square\pink.css" />
+    <Content Include="Content\backend\square\pink.png" />
+    <Content Include="Content\backend\square\purple%402x.png" />
+    <Content Include="Content\backend\square\purple.css" />
+    <Content Include="Content\backend\square\purple.png" />
+    <Content Include="Content\backend\square\red%402x.png" />
+    <Content Include="Content\backend\square\red.css" />
+    <Content Include="Content\backend\square\red.png" />
+    <Content Include="Content\backend\square\square%402x.png" />
+    <Content Include="Content\backend\square\square.css" />
+    <Content Include="Content\backend\square\square.png" />
+    <Content Include="Content\backend\square\yellow%402x.png" />
+    <Content Include="Content\backend\square\yellow.css" />
+    <Content Include="Content\backend\square\yellow.png" />
+    <Content Include="Content\backend\square\_all.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -144,9 +383,9 @@
     <Content Include="CSS\fontawesome-all.min.css" />
     <Content Include="CSS\Home.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Duan.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="GioiThieu.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -159,10 +398,83 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Backend\Backend.Master" />
+    <Content Include="Scripts\backend\jquery-3.3.1.min.map" />
+    <Content Include="Content\backend\bootstrap.css.map" />
+    <Content Include="Content\backend\datatables\extensions\ColReorder\Readme.md" />
+    <Content Include="Content\backend\datatables\extensions\ColVis\Readme.md" />
+    <Content Include="Content\backend\datatables\extensions\FixedColumns\Readme.md" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\css\dataTables.responsive.scss" />
+    <Content Include="Content\backend\datatables\extensions\Responsive\Readme.md" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\images\psd\collection.psd" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\images\psd\copy document.psd" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\images\psd\file_types.psd" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\images\psd\printer.psd" />
+    <Content Include="Content\backend\datatables\extensions\TableTools\Readme.md" />
+    <Content Include="Content\backend\fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\backend\fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\backend\fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\backend\fontawesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\backend\fontawesome\fonts\FontAwesome.otf" />
+    <Content Include="Content\backend\fontawesome\less\animated.less" />
+    <Content Include="Content\backend\fontawesome\less\bordered-pulled.less" />
+    <Content Include="Content\backend\fontawesome\less\core.less" />
+    <Content Include="Content\backend\fontawesome\less\fixed-width.less" />
+    <Content Include="Content\backend\fontawesome\less\font-awesome.less" />
+    <Content Include="Content\backend\fontawesome\less\icons.less" />
+    <Content Include="Content\backend\fontawesome\less\larger.less" />
+    <Content Include="Content\backend\fontawesome\less\list.less" />
+    <Content Include="Content\backend\fontawesome\less\mixins.less" />
+    <Content Include="Content\backend\fontawesome\less\path.less" />
+    <Content Include="Content\backend\fontawesome\less\rotated-flipped.less" />
+    <Content Include="Content\backend\fontawesome\less\stacked.less" />
+    <Content Include="Content\backend\fontawesome\less\variables.less" />
+    <Content Include="Content\backend\fontawesome\scss\font-awesome.scss" />
+    <Content Include="Content\backend\fontawesome\scss\_animated.scss" />
+    <Content Include="Content\backend\fontawesome\scss\_bordered-pulled.scss" />
+    <Content Include="Content\backend\fontawesome\scss\_core.scss" />
+    <Content Include="Content\backend\fontawesome\scss\_fixed-width.scss" />
+    <Content Include="Content\backend\fontawesome\scss\_icons.scss" />
+    <Content Include="Content\backend\fontawesome\scss\_larger.scss" />
+    <Content Include="Content\backend\fontawesome\scss\_list.scss" />
+    <Content Include="Content\backend\fontawesome\scss\_mixins.scss" />
+    <Content Include="Content\backend\fontawesome\scss\_path.scss" />
+    <Content Include="Content\backend\fontawesome\scss\_rotated-flipped.scss" />
+    <Content Include="Content\backend\fontawesome\scss\_stacked.scss" />
+    <Content Include="Content\backend\fontawesome\scss\_variables.scss" />
+    <Content Include="Content\backend\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\backend\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\backend\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\backend\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\backend\ionicons\fonts\ionicons.eot" />
+    <Content Include="Content\backend\ionicons\fonts\ionicons.ttf" />
+    <Content Include="Content\backend\ionicons\fonts\ionicons.woff" />
+    <Content Include="Content\backend\ionicons\less\ionicons.less" />
+    <Content Include="Content\backend\ionicons\less\_ionicons-font.less" />
+    <Content Include="Content\backend\ionicons\less\_ionicons-icons.less" />
+    <Content Include="Content\backend\ionicons\less\_ionicons-variables.less" />
+    <Content Include="Content\backend\ionicons\scss\ionicons.scss" />
+    <Content Include="Content\backend\ionicons\scss\_ionicons-font.scss" />
+    <Content Include="Content\backend\ionicons\scss\_ionicons-icons.scss" />
+    <Content Include="Content\backend\ionicons\scss\_ionicons-variables.scss" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Images\banner.jpg" />
     <Content Include="Images\banner1.jpg" />
     <Content Include="Images\banner2.png" />
+    <Content Include="nhadatban.aspx" />
+    <Content Include="nhadatchothue.aspx" />
+    <Content Include="Scripts\backend\AjaxEj.js" />
+    <Content Include="Scripts\backend\app.min.js" />
+    <Content Include="Scripts\backend\backend.js" />
+    <Content Include="Scripts\backend\bootstrap.min.js" />
+    <Content Include="Scripts\backend\DanhSachLoaiPhim.js" />
+    <Content Include="Scripts\backend\doimatkhau.js" />
+    <Content Include="Scripts\backend\icheck.min.js" />
+    <None Include="Scripts\backend\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\backend\jquery-3.3.1.js" />
+    <Content Include="Scripts\backend\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\backend\jquery.min.js" />
+    <Content Include="Scripts\backend\pnotify.custom.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -192,6 +504,8 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="TextFile.txt" />
+    <Content Include="thongtinchitiet.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -199,20 +513,102 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="Backend\Backend.Master.cs">
+      <DependentUpon>Backend.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="Backend\Backend.Master.designer.cs">
+      <DependentUpon>Backend.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\Dangky.aspx.cs">
+      <DependentUpon>Dangky.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\Dangky.aspx.designer.cs">
+      <DependentUpon>Dangky.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\DanhNguoiDung.aspx.cs">
+      <DependentUpon>DanhNguoiDung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\DanhNguoiDung.aspx.designer.cs">
+      <DependentUpon>DanhNguoiDung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\DanhSachBaiViet.aspx.cs">
+      <DependentUpon>DanhSachBaiViet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\DanhSachBaiViet.aspx.designer.cs">
+      <DependentUpon>DanhSachBaiViet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\DanhSachTaiKhoan.aspx.cs">
+      <DependentUpon>DanhSachTaiKhoan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\DanhSachTaiKhoan.aspx.designer.cs">
+      <DependentUpon>DanhSachTaiKhoan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\DoiMatKhau.aspx.cs">
+      <DependentUpon>DoiMatKhau.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\DoiMatKhau.aspx.designer.cs">
+      <DependentUpon>DoiMatKhau.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\GiaoDich.aspx.cs">
+      <DependentUpon>GiaoDich.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\GiaoDich.aspx.designer.cs">
+      <DependentUpon>GiaoDich.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\KhongDuThamQuyen.aspx.cs">
+      <DependentUpon>KhongDuThamQuyen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\KhongDuThamQuyen.aspx.designer.cs">
+      <DependentUpon>KhongDuThamQuyen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\LichSuGD.aspx.cs">
+      <DependentUpon>LichSuGD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\LichSuGD.aspx.designer.cs">
+      <DependentUpon>LichSuGD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\Services\DSLichSuGD.asmx.cs">
+      <DependentUpon>DSLichSuGD.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Backend\Services\DSLichSuGD1.cs" />
+    <Compile Include="Backend\Thongtincanhan.aspx.cs">
+      <DependentUpon>Thongtincanhan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\Thongtincanhan.aspx.designer.cs">
+      <DependentUpon>Thongtincanhan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -221,15 +617,30 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GioiThieu.aspx.cs">
-      <DependentUpon>GioiThieu.aspx</DependentUpon>
+    <Compile Include="Duan.aspx.cs">
+      <DependentUpon>Duan.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GioiThieu.aspx.designer.cs">
-      <DependentUpon>GioiThieu.aspx</DependentUpon>
+    <Compile Include="Duan.aspx.designer.cs">
+      <DependentUpon>Duan.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="mylibrary.cs" />
+    <Compile Include="nhadatban.aspx.cs">
+      <DependentUpon>nhadatban.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nhadatban.aspx.designer.cs">
+      <DependentUpon>nhadatban.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nhadatchothue.aspx.cs">
+      <DependentUpon>nhadatchothue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nhadatchothue.aspx.designer.cs">
+      <DependentUpon>nhadatchothue.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -245,6 +656,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="thongtinchitiet.aspx.cs">
+      <DependentUpon>thongtinchitiet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="thongtinchitiet.aspx.designer.cs">
+      <DependentUpon>thongtinchitiet.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
