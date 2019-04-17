@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="Site.master" CodeBehind="thongtinchitiet.aspx.cs" Inherits="BTL_WEBNC.thongtinchitiet" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="Site.master" CodeBehind="thongtinduan.aspx.cs" Inherits="BTL_WEBNC.thongtinduan" %>
 
 <asp:Content ID="chitiet" ContentPlaceHolderID="MainContent" runat="server">
 	<div class="row" role="main">
@@ -45,8 +45,24 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>Ngày đăng</td>
+											<td>Ngày đăng:</td>
 											<td><asp:Label ID="NgayDang" runat="server" Text="" /></td>
+										</tr>
+										<tr>
+											<td>Quy Mô: </td>
+											<td><asp:Label ID="sQuyMo" runat="server" Text="" /></td>
+										</tr>
+										<tr>
+											<td>Địa Điểm: </td>
+											<td><asp:Label ID="sDiaDiem" runat="server" Text="" /></td>
+										</tr>
+										<tr>
+											<td>Diện Tích: </td>
+											<td><asp:Label ID="sDienTich" runat="server" Text="" /> m²</td>
+										</tr>
+										<tr>
+											<td>Công Ty: </td>
+											<td><asp:Label ID="sCongTy" runat="server" Text="" /></td>
 										</tr>
 									</tbody>
 								</table>
@@ -64,43 +80,31 @@
 						</div>
 						<div class="row">
 							<div class="col-xs-12">
-								<div class="detail-address">
-									<div class="row">
-										<div class="col-xs-12">
-											<span id="MainContent_ctlDetailBox_ctlAddressLocation_lblTitle" class="title">Địa điểm</span>
-											<div class="col-xs-9">
-												<address style="margin-top:10px;"><asp:Label ID="DiaDiem" runat="server" Text=""></asp:Label></address>
+								<div class="panel panel-contact">
+									<div class="panel-heading">
+										<h3 class="panel-title">
+											<span class="icon icon-mail-white spacer-right-5">Mô Tả</span>
+										</h3>
+									</div>
+									<div class="panel-body">
+										<div class="row">
+											<div style="white-space: pre-wrap;"><asp:Label ID="sMoTa" runat="server" Text=""></asp:Label>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="row">
-									<div class="col-xs-12">
-										<table class=" detail-attrs">
-											<colgroup>
-												<col class="col-xs-6">
-												<col class="col-xs-6">
-											</colgroup>
-											<thead>
-												<tr>
-													<th colspan="2">Đặc điểm chính</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Giá</td>
-													<td><asp:Label ID="Gia" runat="server" Text="" /> VNĐ</td>
-												</tr>
-												<tr>
-													<td>Diện tích </td>
-													<td><asp:Label ID="DienTich" runat="server" Text=""></asp:Label> m²</td>
-												</tr>
-											</tbody>
-										</table>
+								<div class="panel panel-contact">
+									<div class="panel-heading">
+										<h3 class="panel-title">
+											<span class="icon icon-mail-white spacer-right-5">Nội Dung</span>
+										</h3>
 									</div>
-								</div>
-								<h3> Mô tả chi tiết</h3>
-								<div style="white-space: pre-wrap;"><asp:Label ID="NoiDung" runat="server" Text=""></asp:Label>
+									<div class="panel-body">
+										<div class="row">
+											<div style="white-space: pre-wrap;"><asp:Label ID="sNoiDung" runat="server" Text=""></asp:Label>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>

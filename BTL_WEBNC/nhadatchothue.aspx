@@ -4,7 +4,7 @@
 	<div class="container main bs-docs-container">
 		<div class="row" role="main">
 			<div class="container">
-				<h1 class="headline"> Nhà đất cho thue </h1>
+				<h1 class="headline"> Nhà đất cho thuê </h1>
 			<div class="row">
 				<div class="col-xs-12 col-md-8 col-lg-9 col-md-push-4 col-lg-push-3">
 					<div class="list-group result-list">
@@ -15,11 +15,11 @@
 								</div>
 								<div id="MainContent_ctlList_ctlResults_divSorting" class="col-xs-7">
 									<select id="MainContent_ctlList_ctlResults_ddlSorting" class="pull-right col-xs-12 btn btn-light">
-										<option value="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban?order=0">Mặc định</option>
-										<option value="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban?order=1">Mới nhất</option>
-										<option value="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban?order=3">Cũ nhất</option>
-										<option value="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban?order=2">Giá cao nhất</option>
-										<option value="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban?order=4">Giá thấp nhất</option>
+										<option value="1">Mặc định</option>
+										<option value="2">Mới nhất</option>
+										<option value="3">Cũ nhất</option>
+										<option value="4">Giá cao nhất</option>
+										<option value="5">Giá thấp nhất</option>
 									</select>
 								</div>
 							</div>
@@ -39,7 +39,7 @@
 									<div class="col-xs-12 col-sm-6 col-lg-3">
 										<a href="#" class="object">
 											<div class="image"> 
-												<img class="img-responsive imageFeaturedBox" src="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-small="https://thanhphongland.com/public/uploads/shop/2015/11/18/w200xh200_93ad9800c4d27566205d0e3e04603532.jpg" data-medium="https://thanhphongland.com/public/uploads/shop/2015/11/18/93ad9800c4d27566205d0e3e04603532.jpg" alt="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi" title="Căn hộ cao cấp view sông Sài Gòn giá cực kì tốt. Nhanh tay liên hệ 0937778587 để được nhận ưu đãi"> 
+												<img class="img-responsive imageFeaturedBox" src="Images/<%#Eval("sImages") %>"  alt="<%#Eval("sTieude") %>" > 
 											</div>
 											<p class="title" style="margin-bottom: 7px;"><%#Eval("sTieude") %></p>
 											<p class="location" style="margin-bottom: 5px;"><%#Eval("sDiaChiCC") %></p> 
@@ -58,7 +58,7 @@
 											<div class="col-md-2 col-sm-4 col-xs-12 picture-area">
 												<div>
 													<div class="mbndcustomPicture"> 
-														<img class="img-thumbnail" src="Images/<%#Eval("PK_iMaBV") %>.jpg" alt="Bán CĂN 2 NGỦ+2 VINCITY SPORTIA GIÁ RẺ NHẤT LH:0965884838" title="Bán CĂN 2 NGỦ+2 VINCITY SPORTIA GIÁ RẺ NHẤT LH:0965884838">
+														<img class="img-thumbnail" src="Images/<%#Eval("sImages") %>" alt="<%#Eval("sTieude") %>" title="<%#Eval("sTieude") %>">
 													</div>
 												</div>
 											</div>
@@ -82,9 +82,13 @@
 								</ItemTemplate>
 							</asp:ListView>
 						</div>
-						<div class="list-group-item list-footer text-center">
-							<div class="pagination"><ul class="pagination"><li class="active"><a>1</a></li><li><a href="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban/25">2</a></li><li><a href="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban/50">3</a></li><li class="next-page"><a href="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban/25">&gt;</a></li><li><a href="https://thanhphongland.com/tin-bds/chuyen-muc/1-nha-dat-ban/250">Last ›</a></li></ul></div>        </div>
-						</div>
+						<!--<div class="list-group-item list-footer text-center">
+							<div class="pagination">
+								<ul class="pagination">
+									<li class="active"><a>1</a></li><li><a href="">2</a></li><li><a href="">3</a></li><li class="next-page"><a href="">&gt;</a></li><li><a href="">Last ›</a></li></ul>
+							</div>
+						</div>-->
+					</div>
 				</div>
 				<form action="#" method="get" novalidate="novalidate">
 					<div class="col-xs-12 col-md-4 col-lg-3 col-md-pull-8 col-lg-pull-9" id="jump2filter">
