@@ -10,7 +10,7 @@
 namespace BTL_WEBNC {
     
     
-    public partial class thongtinchitiet {
+    public partial class thongtinduan {
         
         /// <summary>
         /// sTieude control.
@@ -40,39 +40,57 @@ namespace BTL_WEBNC {
         protected global::System.Web.UI.WebControls.Label NgayDang;
         
         /// <summary>
-        /// DiaDiem control.
+        /// sQuyMo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DiaDiem;
+        protected global::System.Web.UI.WebControls.Label sQuyMo;
         
         /// <summary>
-        /// Gia control.
+        /// sDiaDiem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Gia;
+        protected global::System.Web.UI.WebControls.Label sDiaDiem;
         
         /// <summary>
-        /// DienTich control.
+        /// sDienTich control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DienTich;
+        protected global::System.Web.UI.WebControls.Label sDienTich;
         
         /// <summary>
-        /// NoiDung control.
+        /// sCongTy control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label NoiDung;
+        protected global::System.Web.UI.WebControls.Label sCongTy;
+        
+        /// <summary>
+        /// sMoTa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label sMoTa;
+        
+        /// <summary>
+        /// sNoiDung control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label sNoiDung;
     }
 }

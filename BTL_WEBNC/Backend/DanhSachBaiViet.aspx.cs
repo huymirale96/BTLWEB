@@ -12,15 +12,13 @@ namespace BTL_WEBNC.Backend
     public partial class DanhSachBaiViet : System.Web.UI.Page
     {
         public string status = "";
-        //SqlConnection cnn = new SqlConnection(ConfigurationManager.ConnectionStrings["connection"].ConnectionString);
-        SqlConnection cnn = mylibrary.connectDatabase();
+		SqlConnection cnn = mylibrary.connectDatabase();
         protected void Page_Load(object sender, EventArgs e)
         {
             string quyen = Session["ma_quyen"].ToString();
             
             if (string.IsNullOrEmpty(quyen))
             {
-               
                 //Response.Write("<script> window.location='http://localhost:59209/Backend/KhongDuThamQuyen.aspx';</script>");
                 Response.Redirect("KhongDuThamQuyen.aspx");
             }
@@ -36,15 +34,21 @@ namespace BTL_WEBNC.Backend
         }
         protected void btnThemMoi_Click(object sender, EventArgs e)
         {
-            string matk = Session["ma_taikhoan"].ToString();
-            SqlCommand cmd = new SqlCommand("IUD_BaiViet", cnn);
+			string fileName = "~\\Images\\";
+			string name = "baiviet_"+FileUpload1.FileName;
+			string filePath = MapPath(fileName+name);
+			FileUpload1.SaveAs(filePath);
+			string matk = Session["ma_taikhoan"].ToString();
+			SqlCommand cmd = new SqlCommand("IUD_BaiViet", cnn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@Tieude", sTieude.Text);          
             cmd.Parameters.AddWithValue("@Noidung",sNoidung.Text);
             cmd.Parameters.AddWithValue("@DiaChiCC", sDiaChiCC.Text);
             cmd.Parameters.AddWithValue("@sGiaban", sGiaban.Text);
-            cmd.Parameters.AddWithValue("@sNgayDang", DateTime.Now.ToString("yyyy-MM-dd"));
-            cmd.Parameters.AddWithValue("@FK_iTaikhoan", matk);
+			cmd.Parameters.AddWithValue("@sDienTich", sDienTich.Text);
+			cmd.Parameters.AddWithValue("@sNgayDang", DateTime.Now.ToString("yyyy-MM-dd"));
+			cmd.Parameters.AddWithValue("@sImages", name);
+			cmd.Parameters.AddWithValue("@FK_iTaikhoan", matk);
             cmd.Parameters.AddWithValue("@FK_iDanhmuc", Danhmuc.SelectedValue);
             cmd.Parameters.AddWithValue("@action", "insert");
             int check = cmd.ExecuteNonQuery();
@@ -60,18 +64,19 @@ namespace BTL_WEBNC.Backend
             }
             getdata();
         }
-        protected void btnSuaThongTin_Click(object sender, EventArgs e)
+        protected void btnSuaThongTinBV_Click(object sender, EventArgs e)
         {
-            string ss_mataikhoan = Session["ma_taikhoan"].ToString();
+			LinkButton btn = (LinkButton)sender;
+			string ss_mataikhoan = Session["ma_taikhoan"].ToString();
             string quyen = Session["ma_quyen"].ToString();
-            LinkButton btn = (LinkButton)sender;
-            string mabaiviet = btn.CommandArgument;
-            SqlCommand cmd = new SqlCommand("IUD_BaiViet", cnn);
+			int mabv = Int32.Parse(btn.CommandArgument);
+			SqlCommand cmd = new SqlCommand("IUD_BaiViet", cnn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@PK_iMaBV", mabaiviet);
+            cmd.Parameters.AddWithValue("@PK_iMaBV", mabv);
             cmd.Parameters.AddWithValue("@action", "select_id");
             SqlDataReader rd = cmd.ExecuteReader();
-            if (rd.HasRows)
+			
+			if (rd.HasRows)
             {
                 while (rd.Read())
                 {
@@ -81,14 +86,14 @@ namespace BTL_WEBNC.Backend
                     sGiaban.Text = rd["sGiaban"].ToString();
                     Danhmuc.SelectedValue = rd["FK_iDanhmuc"].ToString();
                     btnUpdateInfo.CommandArgument = rd["PK_iMaBV"].ToString();
-                    btnThemMoi.Visible = false;
+					sDienTich.Text = rd["sDienTich"].ToString();
+					UploadStatusLabel.Text = rd["sImages"].ToString();
+					btnThemMoi.Visible = false;
                     btnNhapLai.Visible = false;
                     if (ss_mataikhoan == rd["FK_iTaikhoan"].ToString()|| quyen=="1")
                     {
                         btnUpdateInfo.Visible = true;
-                        
                     }
-                   
                 }
             }
             else
@@ -100,7 +105,8 @@ namespace BTL_WEBNC.Backend
         }
         protected void btnUpdateInfo_Click(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
+			string matk = Session["ma_taikhoan"].ToString();
+			Button btn = (Button)sender;
             string mabaiviet = btn.CommandArgument;
             SqlCommand cmd = new SqlCommand("IUD_BaiViet", cnn);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -109,9 +115,23 @@ namespace BTL_WEBNC.Backend
             cmd.Parameters.AddWithValue("@Noidung", sNoidung.Text);
             cmd.Parameters.AddWithValue("@DiaChiCC", sDiaChiCC.Text);
             cmd.Parameters.AddWithValue("@sGiaban", sGiaban.Text);
-            cmd.Parameters.AddWithValue("@sNgayDang", DateTime.Now.ToString("yyyy-MM-dd"));
+			if (FileUpload1.HasFile == false)
+			{
+				cmd.Parameters.AddWithValue("@sImages", UploadStatusLabel.Text);
+			}
+			else
+			{
+				string fileName = "~\\Images\\";
+				string name = "baiviet_" + FileUpload1.FileName;
+				string filePath = MapPath(fileName + name);
+				FileUpload1.SaveAs(filePath);
+				UploadStatusLabel.Text = name;
+				cmd.Parameters.AddWithValue("@sImages", name);
+			}
+			cmd.Parameters.AddWithValue("@sNgayDang", DateTime.Now.ToString("yyyy-MM-dd"));
             cmd.Parameters.AddWithValue("@FK_iDanhmuc", Danhmuc.SelectedValue);
-            cmd.Parameters.AddWithValue("@action", "update");
+			cmd.Parameters.AddWithValue("@FK_iTaikhoan", matk);
+			cmd.Parameters.AddWithValue("@action", "update");
             int check = cmd.ExecuteNonQuery();
             if (check > 0)
             {
@@ -170,7 +190,5 @@ namespace BTL_WEBNC.Backend
             }
             rd.Close();
         }
-
-       
     }
 }
