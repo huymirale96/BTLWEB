@@ -27,7 +27,6 @@
 												AutoPostBack="True"
 												OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"
 												class="pull-right col-xs-12 btn btn-light">
-									
 										<asp:ListItem Value="">Mặc định</asp:ListItem>  
 										<asp:ListItem>Mới nhất </asp:ListItem>  
 										<asp:ListItem>Cũ nhất</asp:ListItem> 
