@@ -64,7 +64,7 @@
 						</div>
 						<div class="col-md-12">
                         <table class="table table-bordered table-hover">
-                        <caption class="text-center"><h4>DANH SÁCH BÀI VIẾT</h4></caption>
+                        <caption class="text-center"><h4>DANH SÁCH GIAO DỊCH</h4></caption>
                         <thead>
                             <th class="text-center col-md-1">STT</th>
                             <th class="text-center col-md-2">Tên Tài Khoản</th>                            
@@ -83,7 +83,7 @@
                                         <td ><%#Eval("sTenHoaDon") %></td>
                                         <td class="text-center"><%#Eval("dNgayLapHD") %></td>
                                         <td ><%#Eval("sTongTien") %></td>
-                                        <td class="text-center"><%#Eval("sNoidungGD") %></td>
+                                        <td ><%#Eval("sNoidungGD") %></td>
                                         <td class="text-center">
                                             <asp:LinkButton ID="btnSuaThongTinGD" runat="server" CssClass="btn btn-success btn-sm"  CommandArgument='<%#Eval("PK_iMaGD") %>' OnClick="btnSuaThongTinGD_Click"><i class="fa fa-pencil"></i></asp:LinkButton>
                                         </td>
