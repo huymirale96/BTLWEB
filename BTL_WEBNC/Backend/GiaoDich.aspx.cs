@@ -37,7 +37,7 @@ namespace BTL_WEBNC.Backend
 			cmd.Parameters.AddWithValue("@sTenHoaDon", sTenHoaDon.Text);
 			cmd.Parameters.AddWithValue("@sNoidungGD", sNoidungGD.Text);
 			cmd.Parameters.AddWithValue("@sTongTien", sTongTien.Text);
-			cmd.Parameters.AddWithValue("@dNgayLapHD", DateTime.Now.ToString("yyyy-MM-dd"));
+			cmd.Parameters.AddWithValue("@dNgayLapHD", DateTime.Now);
 			cmd.Parameters.AddWithValue("@FK_iTaikhoan", matk);
 			cmd.Parameters.AddWithValue("@action", "insert");
 			int check = cmd.ExecuteNonQuery();
@@ -55,14 +55,71 @@ namespace BTL_WEBNC.Backend
 		}
 		protected void btnUpdateInfoGD_Click(object sender, EventArgs e)
 		{
-			Button btn = (Button)sender;
-			string mabaiviet = btn.CommandArgument;
-			
-		}
+            Button btn = (Button)sender;
+            string magiaodich = btn.CommandArgument;
+            string matk = Session["ma_taikhoan"].ToString();
+            SqlCommand cmd = new SqlCommand("IUD_ThongTinGiaoDich", cnn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@PK_iMaGD", magiaodich);
+            cmd.Parameters.AddWithValue("@sTenHoaDon", sTenHoaDon.Text);
+            cmd.Parameters.AddWithValue("@sNoidungGD", sNoidungGD.Text);
+            cmd.Parameters.AddWithValue("@sTongTien", sTongTien.Text);
+
+            cmd.Parameters.AddWithValue("@dNgaySuaHD", DateTime.Now);
+            cmd.Parameters.AddWithValue("@FK_iTaikhoan", matk);
+            cmd.Parameters.AddWithValue("@action", "update");
+            int check = cmd.ExecuteNonQuery();
+            if (check > 0)
+            {
+                status = "showMessage('Thành công','Tạo tài khoản thành công', 'warning', 'glyphicon-ok-sign');";
+                cnn.Close();
+                Response.Redirect("GiaoDich.aspx");
+            }
+            else
+            {
+                status = "showMessage('Thất bại','Tạo tài khoản không thành công. Vui lòng thử lại', 'warning', 'glyphicon-ok-sign');";
+                cnn.Close();
+                Response.Redirect("GiaoDich.aspx");
+            }
+
+
+        }
 		protected void btnSuaThongTinGD_Click(object sender, EventArgs e)
 		{
-			
-		}
+            string ss_mataikhoan = Session["ma_taikhoan"].ToString();
+            string quyen = Session["ma_quyen"].ToString();
+            LinkButton btn = (LinkButton)sender;
+            string magiaodich = btn.CommandArgument;
+            SqlCommand cmd = new SqlCommand("IUD_ThongTinGiaoDich", cnn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@PK_iMaGD", magiaodich);
+            cmd.Parameters.AddWithValue("@action", "select_id");
+            SqlDataReader rd = cmd.ExecuteReader();
+            if (rd.HasRows)
+            {
+                while (rd.Read())
+                {
+                    sTenHoaDon.Text = rd["sTenHoaDon"].ToString();
+                    sNoidungGD.Text = rd["sNoidungGD"].ToString();
+                    sTongTien.Text = rd["sTongTien"].ToString();
+                    btnUpdateInfoGD.CommandArgument = rd["PK_iMaGD"].ToString();
+                    btnThemMoiGD.Visible = false;
+                    btnNhapLaiGD.Visible = false;
+                    if (ss_mataikhoan == rd["FK_iTaikhoan"].ToString() || quyen == "1")
+                    {
+                        btnUpdateInfoGD.Visible = true;
+
+                    }
+
+                }
+            }
+            else
+            {
+                rd.Close();
+                Response.Redirect("GiaoDich.aspx");
+            }
+            rd.Close();
+        }
 		protected void getdata()
 		{
 			SqlDataAdapter da = new SqlDataAdapter("IUD_ThongTinGiaoDich", cnn);
