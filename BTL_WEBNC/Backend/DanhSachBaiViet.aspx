@@ -1,8 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Backend/Backend.Master" validateRequest="false" CodeBehind="DanhSachBaiViet.aspx.cs" Inherits="BTL_WEBNC.Backend.DanhSachBaiViet" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
-    <script src="../Scripts/jquery-3.3.1.min.js"></script>
-    <script src="../Scripts/jquery-3.3.1.js"></script>
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <div class="content-wrapper">
@@ -131,8 +129,8 @@
       </form>
     </section><!-- /.content -->
     <script type="text/javascript">
-        window.onload = function (e) { 
-           <%=status %>
+		window.onload = function (e) {
+			<%= status%>
         }
     </script>
   </div><!-- /.content-wrapper -->

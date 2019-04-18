@@ -7,7 +7,7 @@
         <section class="content-header">
             <h1> CHỨC NĂNG HỆ THỐNG</h1>
             <ol>
-               <li><a href="#"><i class="fa fa-home"></i> Trang chủ</a></li>
+               <li><a href="../Default.aspx"><i class="fa fa-home"></i> Trang chủ</a></li>
                 <li class="active">Chức năng hệ thống</li>
             </ol>
         </section>

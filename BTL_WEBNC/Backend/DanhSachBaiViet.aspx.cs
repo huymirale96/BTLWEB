@@ -11,13 +11,13 @@ namespace BTL_WEBNC.Backend
 {
     public partial class DanhSachBaiViet : System.Web.UI.Page
     {
-        public string status = "";
+		public string status = "";
 		SqlConnection cnn = mylibrary.connectDatabase();
         protected void Page_Load(object sender, EventArgs e)
         {
-            string quyen = Session["ma_quyen"].ToString();
-            
-            if (string.IsNullOrEmpty(quyen))
+			Session["status"] = "";
+			string quyen = Session["ma_quyen"].ToString();
+			if (string.IsNullOrEmpty(quyen))
             {
                 //Response.Write("<script> window.location='http://localhost:59209/Backend/KhongDuThamQuyen.aspx';</script>");
                 Response.Redirect("KhongDuThamQuyen.aspx");
@@ -28,7 +28,8 @@ namespace BTL_WEBNC.Backend
                 btnUpdateInfo.Visible = false;
                 if (!Page.IsPostBack)
                 {
-                    getdata();
+					
+					getdata();
                 }
             }
         }
@@ -54,13 +55,12 @@ namespace BTL_WEBNC.Backend
             int check = cmd.ExecuteNonQuery();
             if (check > 0)
             {
-                status = "showMessage('Thành công','Thêm bài viết thành công', 'warning', 'glyphicon-ok-sign');";
+				status = "showMessage('Thành công','Thêm bài viết thành công', 'warning', 'glyphicon-ok-sign');";
 				Response.Redirect("DanhSachbaiViet.aspx");
 			}
             else
             {
-                status = "showMessage('Thất bại','Thêm bài viết không thành công. Vui lòng thử lại', 'warning', 'glyphicon-ok-sign');";
-               
+				status = "showMessage('Thất bại','Thêm bài viết không thành công. Vui lòng thử lại', 'warning', 'glyphicon-ok-sign');";
             }
             getdata();
         }
@@ -99,7 +99,7 @@ namespace BTL_WEBNC.Backend
             else
             {
                 rd.Close();
-                Response.Redirect("DanhSachBaiViet.aspx");
+                Response.Redirect("DanhSachBaiViet.aspx", true);
             }
             rd.Close();
         }
@@ -135,14 +135,17 @@ namespace BTL_WEBNC.Backend
             int check = cmd.ExecuteNonQuery();
             if (check > 0)
             {
-                status = "showMessage('Thành công','Câp nhật bài viết thành công', 'warning', 'glyphicon-ok-sign');";
-            }
-            else
+				status = "showMessage('Thành công','Câp nhật bài viết thành công', 'warning', 'glyphicon-ok-sign');";
+				Response.Redirect("DanhSachBaiViet.aspx", false);
+				//Page_Load(sender, e);
+				//Page.Response.Redirect(Page.Request.Url.ToString(), true);
+			}
+			else
             {
-                status = "showMessage('Thất bại','Câp nhật bài viết không thành công. Vui lòng thử lại', 'warning', 'glyphicon-ok-sign');";
+				status = "showMessage('Thất bại','Câp nhật bài viết không thành công. Vui lòng thử lại', 'warning', 'glyphicon-ok-sign');";
             }
-            Response.Redirect("DanhSachBaiViet.aspx");
-        }
+			
+		}
         protected void btnXoaNhanVien_Click(object sender, EventArgs e)
         {
             LinkButton btn = (LinkButton)sender;
@@ -154,11 +157,11 @@ namespace BTL_WEBNC.Backend
             int check = cmd.ExecuteNonQuery();
             if (check > 0)
             {
-                status = "showMessage('Thành công','Xóa bài viết thành công', 'warning', 'glyphicon-ok-sign');";
+				Session["status"] = "showMessage('Thành công','Xóa bài viết thành công', 'warning', 'glyphicon-ok-sign');";
             }
             else
             {
-                status = "showMessage('Thất bại','Xóa bài viết không thành công. Vui lòng thử lại', 'warning', 'glyphicon-ok-sign');";
+				Session["status"] = "showMessage('Thất bại','Xóa bài viết không thành công. Vui lòng thử lại', 'warning', 'glyphicon-ok-sign');";
             }
             getdata();
         }

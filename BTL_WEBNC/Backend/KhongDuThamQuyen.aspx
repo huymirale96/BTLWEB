@@ -23,7 +23,7 @@
         <p>
           Mời bạn kiểm tra lại hoặc quay về <a href="Welcome.aspx" title="Trang chủ">trang chủ</a>.Chúng tôi rất xin lỗi vì chức năng này chưa được đáp ứng.
         </p>
-          <div class="input-group">
+         <!-- <div class="input-group">
             <input type="text" name="search" class="form-control" placeholder="Tìm kiếm chức năng...">
             <div class="input-group-btn">
               <button type="submit" name="submit" class="btn btn-danger btn-flat"><i class="fa fa-search"></i></button>
