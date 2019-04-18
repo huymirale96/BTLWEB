@@ -1,21 +1,22 @@
-﻿$(document).on('change', '#TenPhim_HomNay', function () {
-    var ten1 = $("#TenPhim_HomNay").val();
+﻿$(document).on('change', '#namgd', function () {
+    var namgiaodich = $("#namgd").val();
+    //alert(namgiaodich);
     $.ajax({
         method: "POST",
-        url: "Services/XuatChieu.asmx/GetXuatChieu", 
+        url: "Services/DSLichSuGD.asmx/GetDanhSach", 
         //cache: true,
         //async: false,
-        data: { ten: ten1 },
+        data: { namgd: namgiaodich },
         //contentType: "application/json; charset = utf-8",
         dataType: "xml",
         success: function (data) {
-            $(data).find('XuatChieuM').each(function () {
-                var tenphim = $(this).find('ten_phim').text();
-                var giochieu = $(this).find('giochieu').text();
+            $(data).find('DSLichSuGD1').each(function () {
                 $("<tr>" +
-                    "<td>" + tenphim + "</td>" +
-                    "<td>" + giochieu + "</td>" +
-                    "<td>" + 1 + "</td>"
+                    "<td>" + $(this).find('sTenHoaDon').text() + "</td>" +
+                    "<td>" + $(this).find('sNoiDungsua').text() + "</td>" +
+                    "<td>" + $(this).find('dNgayLapHD').text() + "</td>" +
+                    "<td>" + $(this).find('dNgaySuaHD').text() + "</td>" +
+                    "<td>" + $(this).find('sTenTK').text() + "</td>" +
                     + "</tr > ").appendTo("#timkiemhomnay");
             });
            
@@ -27,27 +28,3 @@
 });
 
 
-$(document).on('change', '#TenPhim_NgayMai', function () {
-    var ten1 = $("#TenPhim_NgayMai").val();
-    $.ajax({
-        method: "POST",
-        url: "Services/XuatChieu_ngaymai.asmx/GetXuatChieu_NgayMai",
-        data: { ten: ten1 },
-        dataType: "xml",
-        success: function (data) {
-            $(data).find('XuatChieuM').each(function () {
-                var tenphim = $(this).find('ten_phim').text();
-                var giochieu = $(this).find('giochieu').text();
-                $("<tr>" +
-                    "<td>" + tenphim + "</td>" +
-                    "<td>" + giochieu + "</td>" +
-                    "<td>" + 1 + "</td>"
-                    + "</tr > ").appendTo("#phim_ngaymai");
-            });
-
-        },
-        error: function () {
-            alert("lỗi");
-        }
-    });
-});
