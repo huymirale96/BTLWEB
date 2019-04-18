@@ -63,6 +63,7 @@
 							<hr />
 						</div>
 						<div class="col-md-12">
+                            <a href="LichSuGD.aspx"class="btn btn-success">Lịch sử giao dịch</a>
                         <table class="table table-bordered table-hover">
                         <caption class="text-center"><h4>DANH SÁCH GIAO DỊCH</h4></caption>
                         <thead>

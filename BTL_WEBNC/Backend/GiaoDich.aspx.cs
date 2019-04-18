@@ -67,8 +67,7 @@ namespace BTL_WEBNC.Backend
             cmd.Parameters.AddWithValue("@sTongTien", sTongTien.Text);
 
             DateTime date = Convert.ToDateTime(DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss"));
-			cmd.Parameters.AddWithValue("@dNgaySuaHD", date);
-
+            cmd.Parameters.AddWithValue("@dNgaySuaHD", date);
             cmd.Parameters.AddWithValue("@FK_iTaikhoan", matk);
             cmd.Parameters.AddWithValue("@action", "update");
             int check = cmd.ExecuteNonQuery();
