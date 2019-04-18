@@ -37,5 +37,9 @@ namespace BTL_WEBNC
 			ListView1.DataSource = dt4;
 			ListView1.DataBind();
 		}
+		protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			Label1.Text = DropDownList1.SelectedItem.Text;
+		}
 	}
 }

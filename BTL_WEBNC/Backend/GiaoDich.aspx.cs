@@ -83,8 +83,6 @@ namespace BTL_WEBNC.Backend
                 cnn.Close();
                 Response.Redirect("GiaoDich.aspx");
             }
-
-
         }
 		protected void btnSuaThongTinGD_Click(object sender, EventArgs e)
 		{
@@ -110,9 +108,7 @@ namespace BTL_WEBNC.Backend
                     if (ss_mataikhoan == rd["FK_iTaikhoan"].ToString() || quyen == "1")
                     {
                         btnUpdateInfoGD.Visible = true;
-
                     }
-
                 }
             }
             else

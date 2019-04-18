@@ -132,10 +132,10 @@
 </div>
       </form>
     </section><!-- /.content -->
-    <%--<script type="text/javascript">
+    <script type="text/javascript">
         window.onload = function (e) { 
            <%=status %>
         }
-    </script>--%>
+    </script>
   </div><!-- /.content-wrapper -->
 </asp:Content>
