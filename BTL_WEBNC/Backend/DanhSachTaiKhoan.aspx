@@ -1,7 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Backend/Backend.Master" CodeBehind="DanhSachTaiKhoan.aspx.cs" Inherits="BTL_WEBNC.Backend.DanhSachTaiKhoan" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
-    <script src="../Scripts/jquery-3.3.1.min.js"></script>
-    <script src="../Scripts/jquery-3.3.1.js"></script>
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <div class="content-wrapper">

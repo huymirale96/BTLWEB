@@ -35,8 +35,9 @@ namespace BTL_WEBNC
             Session["ma_nhanvien"] = "";
             Session["ma_khachang"] = "";
             Session["matkhau"] = "";
+			Session["status"] = "";
 
-            int so = int.Parse(Application.Get("sn").ToString());
+			int so = int.Parse(Application.Get("sn").ToString());
             so++;
             int tong = int.Parse(Application.Get("TN").ToString());
             tong++;
