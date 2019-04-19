@@ -1,5 +1,6 @@
 ﻿$(document).on('change', '#namgd', function () {
     var namgiaodich = $("#namgd").val();
+                $("#timkiemhomnay").html("");
     //alert(namgiaodich);
     $.ajax({
         method: "POST",
@@ -18,6 +19,7 @@
                     "<td>" + $(this).find('dNgaySuaHD').text() + "</td>" +
                     "<td>" + $(this).find('sTenTK').text() + "</td>" +
                     + "</tr > ").appendTo("#timkiemhomnay");
+                
             });
            
         },
