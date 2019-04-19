@@ -39,7 +39,40 @@ namespace BTL_WEBNC
 		}
 		protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			Label1.Text = DropDownList1.SelectedItem.Text;
+			SqlDataAdapter da = new SqlDataAdapter("IUD_BaiViet_Order", cnn);
+			da.SelectCommand.CommandType = CommandType.StoredProcedure;
+			if (DropDownList1.SelectedItem.Text == "Cũ nhất")
+			{
+				da.SelectCommand.Parameters.AddWithValue("@action", "select_all_ban_asc");
+				DataTable dt = new DataTable();
+				da.Fill(dt);
+				ListView1.DataSource = dt;
+				ListView1.DataBind();
+			}
+			if (DropDownList1.SelectedItem.Text == "Mới nhất")
+			{
+				da.SelectCommand.Parameters.AddWithValue("@action", "select_all_ban_desc");
+				DataTable dt = new DataTable();
+				da.Fill(dt);
+				ListView1.DataSource = dt;
+				ListView1.DataBind();
+			}
+			if (DropDownList1.SelectedItem.Text == "Mặc định")
+			{
+				getdata();
+			}
+		}
+		protected void Chon_Click(object sender, EventArgs e)
+		{
+			SqlDataAdapter da = new SqlDataAdapter("IUD_BaiViet_Order", cnn);
+			da.SelectCommand.CommandType = CommandType.StoredProcedure;
+			da.SelectCommand.Parameters.AddWithValue("@giamin", sMin.Text);
+			da.SelectCommand.Parameters.AddWithValue("@giamax", sMax.Text);
+			da.SelectCommand.Parameters.AddWithValue("@action", "select_gia_ban");
+			DataTable dt = new DataTable();
+			da.Fill(dt);
+			ListView1.DataSource = dt;
+			ListView1.DataBind();
 		}
 	}
 }

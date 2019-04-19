@@ -17,8 +17,7 @@ namespace BTL_WEBNC.Backend
         SqlConnection cnn = mylibrary.connectDatabase();
         protected void Page_Load(object sender, EventArgs e)
         {
-            //getdata();
-            string quyen = Session["ma_quyen"].ToString();
+			string quyen = Session["ma_quyen"].ToString();
             if (quyen == "1")
             {
                 btnThemMoi.Visible = true;
@@ -32,18 +31,14 @@ namespace BTL_WEBNC.Backend
             {
                 //Response.Write("<script> window.location='http://localhost:59209/Backend/KhongDuThamQuyen.aspx';</script>");
                 Response.Redirect("KhongDuThamQuyen.aspx");
-
             }
-
-
         }
 
         protected void btnThemMoi_Click(object sender, EventArgs e)
         {
-            //insert nhan vien moi
-            //string manv = mylibrary.capma("tbl_nhanvien", "ma_nhanvien", "NV");
-            
-            SqlCommand cmd = new SqlCommand("IUD_NhanVien", cnn);
+			//insert nhan vien moi
+			//string manv = mylibrary.capma("tbl_nhanvien", "ma_nhanvien", "NV");
+			SqlCommand cmd = new SqlCommand("IUD_NhanVien", cnn);
             //cnn.Open();
             cmd.CommandType = CommandType.StoredProcedure;
             //cmd.Parameters.AddWithValue("@ma", manv);
@@ -209,5 +204,9 @@ namespace BTL_WEBNC.Backend
             //getdata();
             Response.Redirect("DanhSachTaiKhoan.aspx");
         }
-    }
+		protected void rvDate_ServerValidate(object source, ServerValidateEventArgs args)
+		{
+			
+		}
+	}
 }
