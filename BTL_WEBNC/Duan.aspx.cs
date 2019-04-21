@@ -17,6 +17,22 @@ namespace BTL_WEBNC
 			if (!Page.IsPostBack)
 			{
 				getdata();
+				//if (!string.IsNullOrEmpty(Request.QueryString["search"]))
+				//{
+				//	string Tieude = Request.QueryString["search"];
+				//	SqlDataAdapter search_ten = new SqlDataAdapter("IUD_DuAn", cnn);
+				//	search_ten.SelectCommand.CommandType = CommandType.StoredProcedure;
+				//	search_ten.SelectCommand.Parameters.AddWithValue("@search", Tieude);
+				//	search_ten.SelectCommand.Parameters.AddWithValue("@action", "search");
+				//	DataTable dt = new DataTable();
+				//	search_ten.Fill(dt);
+				//	ListView1.DataSource = dt;
+				//	ListView1.DataBind();
+				//}
+				//else
+				//{
+				//	getdata();
+				//}
 			}
 		}
 		protected void getdata()
@@ -36,6 +52,10 @@ namespace BTL_WEBNC
 			select_offset.Fill(dt);
 			ListView1.DataSource = dt;
 			ListView1.DataBind();
+		}
+		protected void btnsearch_Click(object sender, EventArgs e)
+		{
+			
 		}
 	}
 }

@@ -45,7 +45,7 @@
 													</a>
 												</h3>
 												<p class="card-text"><%#Eval("sCongTy") %></p>
-												<p class="card-price"><%#Eval("sQuyMo") %> VNĐ</p>
+												<p class="card-price"><%#Eval("sQuyMo") %></p>
 											</div>
 										</div>
 									</div>
@@ -76,7 +76,7 @@
 											</div>
 											<div class="card-body">
 												<h3 class="card-title">
-													<a href="/dat-ban-dat-tho-cu-3532/ban-suat-noi-bo-du-an-diamond-city-nga-tu-tan-quy-7876634">
+													<a href="thongtinchitiet.aspx?id=<%#Eval("PK_iMaBV") %>">
 														<%#Eval("sTieude") %>
 													</a>
 												</h3>
@@ -112,7 +112,7 @@
 											</div>
 											<div class="card-body">
 												<h3 class="card-title">
-													<a href="/dat-ban-dat-tho-cu-3532/ban-suat-noi-bo-du-an-diamond-city-nga-tu-tan-quy-7876634">
+													<a href="thongtinchitiet.aspx?id=<%#Eval("PK_iMaBV") %>">
 														<%#Eval("sTieude") %>
 													</a>
 												</h3>

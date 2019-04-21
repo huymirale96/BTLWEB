@@ -105,14 +105,14 @@
 										<div class="panel-heading">Giá (VND) </div>
 										<div class="panel-body range-entry">
 											<div class="form-group col-md-6">
-												<label>từ triệu</label>
+												<label>từ</label>
 												<asp:TextBox ID="sMin"  runat="server" CssClass="form-control InputJs textbox-phone input-min" placeholder="0" onkeydown = "return (event.keyCode!=13);"></asp:TextBox>
 											</div>
 											<div class="form-group col-md-6">
-												<label>đến triệu</label>
-												<asp:TextBox ID="sMax"  runat="server"  MaxLength="16" CssClass="form-control InputJs textbox-phone input-min" placeholder="1.000.000" onkeydown = "return (event.keyCode!=13);"></asp:TextBox>
+												<label>đến</label>
+												<asp:TextBox ID="sMax"  runat="server"  MaxLength="16" CssClass="form-control InputJs textbox-phone input-min" placeholder="1.000.000.000" onkeydown = "return (event.keyCode!=13);"></asp:TextBox>
 											</div>
-											<span id="" class="hidden hide-min">0</span> <span id="" class="hidden hide-max">1.000.000</span>
+											
 											<div class="col-xs-12">
 												&nbsp;
 												<asp:Button ID="Chon" runat="server" Text="Chọn" 

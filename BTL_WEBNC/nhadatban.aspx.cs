@@ -21,14 +21,6 @@ namespace BTL_WEBNC
 		}
 		protected void getdata()
 		{
-			SqlDataAdapter da = new SqlDataAdapter("IUD_BaiViet_Order", cnn);
-			da.SelectCommand.CommandType = CommandType.StoredProcedure;
-			da.SelectCommand.Parameters.AddWithValue("@action", "select_offset_ban");
-			DataTable dt = new DataTable();
-			da.Fill(dt);
-			ListView2.DataSource = dt;
-			ListView2.DataBind();
-
 			SqlDataAdapter top4 = new SqlDataAdapter("IUD_BaiViet_Order", cnn);
 			top4.SelectCommand.CommandType = CommandType.StoredProcedure;
 			top4.SelectCommand.Parameters.AddWithValue("@action", "select_nhadatban");
@@ -36,6 +28,14 @@ namespace BTL_WEBNC
 			top4.Fill(dt4);
 			ListView1.DataSource = dt4;
 			ListView1.DataBind();
+
+			SqlDataAdapter da = new SqlDataAdapter("IUD_BaiViet_Order", cnn);
+			da.SelectCommand.CommandType = CommandType.StoredProcedure;
+			da.SelectCommand.Parameters.AddWithValue("@action", "select_offset_ban");
+			DataTable dt = new DataTable();
+			da.Fill(dt);
+			ListView2.DataSource = dt;
+			ListView2.DataBind();
 		}
 		protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
 		{
@@ -48,6 +48,10 @@ namespace BTL_WEBNC
 				da.Fill(dt);
 				ListView1.DataSource = dt;
 				ListView1.DataBind();
+
+				ListView2.Items.Clear();
+				ListView2.DataSource = null;
+				ListView2.DataBind();
 			}
 			if (DropDownList1.SelectedItem.Text == "Mới nhất")
 			{
@@ -56,6 +60,10 @@ namespace BTL_WEBNC
 				da.Fill(dt);
 				ListView1.DataSource = dt;
 				ListView1.DataBind();
+
+				ListView2.Items.Clear();
+				ListView2.DataSource = null;
+				ListView2.DataBind();
 			}
 			if (DropDownList1.SelectedItem.Text == "Mặc định")
 			{
@@ -64,15 +72,21 @@ namespace BTL_WEBNC
 		}
 		protected void Chon_Click(object sender, EventArgs e)
 		{
+			int smin = Int32.Parse(sMin.Text);
+			int smax = Int32.Parse(sMax.Text);
 			SqlDataAdapter da = new SqlDataAdapter("IUD_BaiViet_Order", cnn);
 			da.SelectCommand.CommandType = CommandType.StoredProcedure;
-			da.SelectCommand.Parameters.AddWithValue("@giamin", sMin.Text);
-			da.SelectCommand.Parameters.AddWithValue("@giamax", sMax.Text);
+			da.SelectCommand.Parameters.AddWithValue("@giamin", smin);
+			da.SelectCommand.Parameters.AddWithValue("@giamax", smax);
 			da.SelectCommand.Parameters.AddWithValue("@action", "select_gia_ban");
 			DataTable dt = new DataTable();
 			da.Fill(dt);
 			ListView1.DataSource = dt;
 			ListView1.DataBind();
+
+			ListView2.Items.Clear();
+			ListView2.DataSource = null;
+			ListView2.DataBind();
 		}
 	}
 }

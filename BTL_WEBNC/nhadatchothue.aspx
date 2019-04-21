@@ -106,11 +106,11 @@
 									<div class="panel-heading"> Giá (VND) </div>
 									<div class="panel-body range-entry">
 										<div class="form-group col-md-6">
-											<label> từ triệu</label>
+											<label> từ</label>
 											<input name="price_min" type="text" value="" maxlength="16" id="" class="form-control InputJs textbox-phone input-min" placeholder="0">
 										</div>
 										<div class="form-group col-md-6">
-											<label> đến triệu</label>
+											<label> đến</label>
 											<input name="price_max" type="text" value="" maxlength="16" id="MainContent_ctlList_ctlFilters_AttGroups_ctl00_1_txtMax_1" class="form-control InputJs textbox-phone input-max" placeholder="1.000.000">
 										</div>
 											<span id="MainContent_ctlList_ctlFilters_AttGroups_ctl00_1_hidMin_1" class="hidden hide-min">0</span> <span id="MainContent_ctlList_ctlFilters_AttGroups_ctl00_1_hidMax_1" class="hidden hide-max">1.000.000</span>
@@ -119,7 +119,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="panel panel-filter">
+								<%--<div class="panel panel-filter">
 									<div class="panel-heading"> Diện tích </div>
 									<div class="panel-body range-entry">
 										<div class="form-group col-md-6">
@@ -134,7 +134,7 @@
 											<button value="submit" id="MainContent_ctlList_ctlFilters_AttGroups_ctl00_2_Apply_2" class="btn btn-primary btn-xs pull-right"><span>Chọn</span></button>
 										</div>
 									</div>
-								</div>
+								</div>--%>
 							</div>
 						</form>
 					</div>
