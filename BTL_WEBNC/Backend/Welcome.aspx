@@ -74,21 +74,7 @@
                         <a href="GiaoDich.aspx" class="small-box-footer">Chi tiết... <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div><!-- ./col -->
-                <div class="col-lg-3 col-xs-6"><!-- small box -->
-                    <div class="small-box bg-light-blue">
-                        <div class="inner">
-                            <h4>Báo cáo thống kê</h4>
-                            <p>
-                                <br />
-                                <br />
-                            </p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-pie-graph"></i>
-                        </div>
-                        <a href="BaoCaoThongKe.aspx" class="small-box-footer">Chi tiết... <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
+               
                 <!-- ./col -->
                 <div class="col-lg-3 col-xs-6"> <!-- small box -->
                     <div class="small-box bg-fuchsia">
@@ -107,7 +93,7 @@
                 </div><!-- ./col -->
 				<!-- ./col -->
                 <div class="col-lg-3 col-xs-6"> <!-- small box -->
-                    <div class="small-box bg-fuchsia">
+                    <div class="small-box bg-light-blue">
                         <div class="inner">
                             <h4>Danh Sách Dự Án</h4>
                             <p>

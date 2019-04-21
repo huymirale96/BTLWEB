@@ -1,6 +1,6 @@
 ﻿$(document).on('change', '#namgd', function () {
     var namgiaodich = $("#namgd").val();
-                $("#timkiemhomnay").html("");
+    $("#timkiemhomnay").html("");
     //alert(namgiaodich);
     $.ajax({
         method: "POST",

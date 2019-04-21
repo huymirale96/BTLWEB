@@ -6,18 +6,13 @@
 				<div class="row" style="padding:0;margin:0;">
 					<div class="col-xs-12 box-search quick-search">
 						<div class="realty-filter clearfix">
-							  <form runat="server" id="search_form" action="https://duan.muabannhadat.vn/tim-kiem/" post="GET" role="search">
+							  <form runat="server" id="search_form" action="#" post="GET" role="search">
 		  						  <div class="visible-fields fields">
 									 <input type="text" name="tu-khoa" value="" placeholder="Tên từ khóa tìm kiếm">
-										<select runat="server" name="tinhthanh" id="tinhthanh" data-live-search="true">
-											<option value="">- Tỉnh thành -</option>
-										</select>
-										<select name="gia-du-an" id="gia-du-an" data-live-search="true"><option value="">- Mức giá -</option><option data-children="[]" value="1-ty-2-ty">Dự án 1 tỷ đến 2 tỷ</option><option data-children="[]" value="duoi-1-ty">Dự án dưới 1 tỷ</option><option data-children="[]" value="tren-2-ty">Dự án trên 2 tỷ</option><option data-children="[]" value="gia-cao-cap">Giá cao cấp</option><option data-children="[]" value="gia-re">Giá rẻ</option><option data-children="[]" value="gia-trung-binh">Giá trung bình</option></select>        
-										<button id="btnSearch" type="submit">Tìm kiếm <i class="fa fa-search" aria-hidden="true"></i></button>
+									<button id="btnSearch" type="submit">Tìm kiếm <i class="fa fa-search" aria-hidden="true"></i></button>
 								  </div>
 								  <div class="clearfix"></div>
 							  </form>
-						   
 						</div>
 					</div>
 				</div>
@@ -81,7 +76,7 @@
 							</ItemTemplate>
 						</asp:ListView>
 					</div>
-					<div class="text-center">
+					<%--<div class="text-center">
 						<div class="pagination">
 							<ul class="pagination">
 								<li class="active"><a>1</a></li>
@@ -91,7 +86,7 @@
 								<li><a href="#">Last ›</a></li>
 							</ul>
 						</div> 
-					</div>
+					</div>--%>
 				</div>
 			</div>
 		</div>

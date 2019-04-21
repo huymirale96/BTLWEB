@@ -22,15 +22,6 @@ namespace BTL_WEBNC {
         protected global::System.Web.UI.HtmlControls.HtmlForm search_form;
         
         /// <summary>
-        /// tinhthanh control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect tinhthanh;
-        
-        /// <summary>
         /// ListView3 control.
         /// </summary>
         /// <remarks>
